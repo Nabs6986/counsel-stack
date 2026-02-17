@@ -438,6 +438,181 @@ export const comparisons: Record<string, Comparison> = {
     intro:
       "MyCase and PracticePanther occupy similar market positions — both target solo practitioners and small law firms, both are well-regarded for ease of use, and both include the core features most practices need. The differences are subtle but meaningful: MyCase wins on price and interface simplicity; PracticePanther wins on workflow depth and LEDES billing for specific practice types.",
   },
+
+  "clio-vs-cosmolex": {
+    slug: "clio-vs-cosmolex",
+    tool1: "clio",
+    tool2: "cosmolex",
+    tool1Name: "Clio",
+    tool2Name: "CosmoLex",
+    tool1Price: "$49–$149/user/month",
+    tool2Price: "$109–$129/user/month",
+    tool1Founded: 2008,
+    tool2Founded: 2013,
+    tool1Users: "150,000+",
+    tool2Users: "10,000+",
+    verdict:
+      "Clio wins on features, integrations, and ecosystem breadth. CosmoLex wins when your priority is having practice management and complete accounting in a single platform — eliminating QuickBooks and its integration friction. For solo and small firms already managing their own books, CosmoLex's all-in-one model often wins on total cost of ownership. For firms with dedicated accountants who need Clio's 250+ integrations and larger community, Clio remains the stronger long-term platform.",
+    summaryWinner: "Depends on accounting needs",
+    summaryReason:
+      "CosmoLex for firms wanting one platform for management + accounting. Clio for firms needing a deep integration ecosystem.",
+    features: [
+      {
+        name: "Starting Price (annual)",
+        tool1: "$49/user/mo",
+        tool2: "$109/user/mo",
+        winner: "tool1",
+      },
+      {
+        name: "Free Trial",
+        tool1: "7 days",
+        tool2: "10 days",
+        winner: "tool2",
+      },
+      {
+        name: "Built-in Full Accounting",
+        tool1: false,
+        tool2: true,
+        winner: "tool2",
+      },
+      {
+        name: "QuickBooks Required",
+        tool1: "Yes",
+        tool2: "No",
+        winner: "tool2",
+      },
+      {
+        name: "Trust Accounting (IOLTA)",
+        tool1: true,
+        tool2: true,
+        winner: "tie",
+      },
+      {
+        name: "Three-Way Trust Reconciliation",
+        tool1: "Limited",
+        tool2: "Full (automated)",
+        winner: "tool2",
+      },
+      {
+        name: "Third-Party Integrations",
+        tool1: "250+",
+        tool2: "~20",
+        winner: "tool1",
+      },
+      {
+        name: "Document Management",
+        tool1: true,
+        tool2: true,
+        winner: "tie",
+      },
+      {
+        name: "Client Portal",
+        tool1: true,
+        tool2: true,
+        winner: "tie",
+      },
+      {
+        name: "Document Automation",
+        tool1: "Advanced plan+",
+        tool2: "Elite plan+",
+        winner: "tie",
+      },
+      {
+        name: "Legal CRM / Client Intake",
+        tool1: "Clio Grow (Expand plan)",
+        tool2: "Basic intake",
+        winner: "tool1",
+      },
+      {
+        name: "Workflow Automation",
+        tool1: "Advanced plan+",
+        tool2: "Elite plan+",
+        winner: "tie",
+      },
+      {
+        name: "P&L / Balance Sheet Reporting",
+        tool1: false,
+        tool2: true,
+        winner: "tool2",
+      },
+      {
+        name: "Mobile App Quality",
+        tool1: "4.6/5",
+        tool2: "3.9/5",
+        winner: "tool1",
+      },
+      {
+        name: "Ease of Use",
+        tool1: "4.5/5",
+        tool2: "4.1/5",
+        winner: "tool1",
+      },
+      {
+        name: "Customer Support Rating",
+        tool1: "4.8/5",
+        tool2: "4.4/5",
+        winner: "tool1",
+      },
+      {
+        name: "Tax Reporting (1099, W-9)",
+        tool1: false,
+        tool2: true,
+        winner: "tool2",
+      },
+    ],
+    choiceCriteria: {
+      chooseT1: [
+        "You need 250+ integrations with third-party tools",
+        "Your firm has a dedicated accountant using QuickBooks",
+        "You want the most feature-rich, most integrated platform available",
+        "You need Clio Grow for client intake and lead tracking (Expand plan)",
+        "You want a strong mobile app and the cleanest UX",
+        "Your firm is large and needs an active community and conference",
+        "You want the longest track record and most mature ecosystem",
+      ],
+      chooseT2: [
+        "You want practice management and full accounting in one platform",
+        "You're frustrated by QuickBooks sync errors and dual data entry",
+        "You need P&L, balance sheet, and cash flow reporting inside your PM software",
+        "You want automated three-way trust reconciliation built in",
+        "You handle tax reporting (W-9, 1099) and want it in the same system",
+        "Your firm's total cost (PM + QuickBooks) exceeds $109/user/month",
+        "You want a longer free trial (10 days vs 7)",
+      ],
+    },
+    faqs: [
+      {
+        question: "Is CosmoLex cheaper than Clio when you factor in QuickBooks?",
+        answer:
+          "It depends on firm size. For a solo attorney: Clio EasyStart ($49) + QuickBooks Simple Start ($35) = $84/month vs CosmoLex Standard ($109/month) — Clio wins by $25. For a 5-attorney firm: Clio Essentials ($445) + QuickBooks Plus ($90) = $535/month vs CosmoLex Standard ($545/month) — nearly identical. At larger firm sizes and higher Clio plan tiers, CosmoLex often wins on total cost while delivering more integrated financial reporting.",
+      },
+      {
+        question: "Does Clio have built-in accounting?",
+        answer:
+          "No. Clio includes trust accounting (IOLTA compliant) and billing/invoicing, but does not include a full double-entry accounting system. For P&L statements, balance sheets, accounts payable, and complete bookkeeping, Clio requires integration with QuickBooks Online or Xero. CosmoLex is the main alternative that includes complete accounting built in.",
+      },
+      {
+        question: "Can you switch from Clio to CosmoLex?",
+        answer:
+          "Yes. CosmoLex has a migration team that assists with data import from Clio, including matters, contacts, time entries, invoices, and billing history. Expect a 2–4 week migration process. The most complex part is migrating historical trust accounting data — plan for careful reconciliation during the transition period.",
+      },
+      {
+        question: "Which is better for trust accounting — Clio or CosmoLex?",
+        answer:
+          "Both platforms include IOLTA-compliant trust accounting, but CosmoLex goes deeper. CosmoLex's automated three-way trust reconciliation (bank statement, trust ledger, and individual client ledgers) is more comprehensive than Clio's trust tools and generates more complete bar association compliance reports. For firms with strict trust accounting needs or that have undergone bar audits, CosmoLex's trust accounting provides greater peace of mind.",
+      },
+      {
+        question: "Does CosmoLex integrate with QuickBooks?",
+        answer:
+          "CosmoLex is designed to replace QuickBooks, not integrate with it. The platform includes complete double-entry accounting, eliminating the need for the QuickBooks integration. If your firm has existing staff who specifically need to work in QuickBooks, CosmoLex may create workflow disruption. However, most firms that switch report the transition is worth the elimination of dual-system management.",
+      },
+    ],
+    metaTitle: "Clio vs CosmoLex 2026: Side-by-Side Comparison | CounselStack",
+    metaDescription:
+      "Clio vs CosmoLex: the definitive 2026 comparison. Pricing, accounting features, integrations, trust accounting, and who should choose each platform.",
+    intro:
+      "Clio and CosmoLex are built on fundamentally different philosophies: Clio is the integration-first, ecosystem-driven leader in legal practice management; CosmoLex is the all-in-one platform that solves the legal industry's most persistent pain point — the friction between practice management and accounting software. This comparison breaks down every meaningful difference, including the total cost of ownership analysis that most reviews miss.",
+  },
 };
 
 export function getComparison(slug: string): Comparison | undefined {

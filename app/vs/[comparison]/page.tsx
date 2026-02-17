@@ -225,6 +225,7 @@ export default async function ComparisonPage({ params }: Props) {
                 { title: "Clio vs MyCase", href: "/vs/clio-vs-mycase" },
                 { title: "Clio vs PracticePanther", href: "/vs/clio-vs-practicepanther" },
                 { title: "MyCase vs PracticePanther", href: "/vs/mycase-vs-practicepanther" },
+                { title: "Clio vs CosmoLex", href: "/vs/clio-vs-cosmolex" },
               ]
                 .filter((c) => c.href !== `/vs/${slug}`)
                 .map((c) => (

@@ -917,6 +917,445 @@ CosmoLex is the right choice for law firms that want a single platform for pract
       },
     ],
   },
+
+  lawmatics: {
+    slug: "lawmatics",
+    name: "Lawmatics",
+    tagline: "The legal CRM and intake automation platform built for modern law firms",
+    logo: "/logos/lawmatics.svg",
+    website: "https://www.lawmatics.com",
+    affiliateUrl: "https://www.lawmatics.com/demo/",
+    founded: 2018,
+    headquarters: "San Diego, CA",
+    overallRating: 4.5,
+    ratings: {
+      easeOfUse: 4.3,
+      features: 4.7,
+      valueForMoney: 4.2,
+      customerSupport: 4.6,
+      mobileApp: 4.0,
+    },
+    pricing: [
+      {
+        name: "Essential",
+        price: "Custom pricing",
+        billingNote: "Annual contract required. 3 user minimum. Contact for quote.",
+        features: [
+          "2,500 contacts",
+          "Client intake forms",
+          "Lead management pipeline",
+          "Legal calendaring",
+          "E-signature (included)",
+          "SMS/text messaging (50/mo)",
+          "Task management",
+          "20 automations",
+          "Conflict checking (basic)",
+          "LMPay payment processing",
+        ],
+      },
+      {
+        name: "Premium",
+        price: "Custom pricing",
+        billingNote: "Annual contract required. 3 user minimum. Contact for quote.",
+        features: [
+          "Everything in Essential",
+          "10,000 contacts",
+          "Marketing automation (unlimited)",
+          "Email marketing (50,000 sends/mo)",
+          "Round-robin scheduling",
+          "Advanced conflict checking",
+          "Custom reporting & dashboards",
+          "ROI tracking & analytics",
+          "URL/UTM tracking",
+          "Event management",
+        ],
+      },
+      {
+        name: "Enterprise",
+        price: "Custom pricing",
+        billingNote: "For large firms and legal organizations. Dedicated account manager.",
+        features: [
+          "Everything in Premium",
+          "Dedicated account manager",
+          "Full access to all features",
+          "Custom integrations",
+          "Priority support",
+          "Custom onboarding",
+        ],
+      },
+    ],
+    freeTrial: "Free demo available (no self-serve trial)",
+    bestFor:
+      "Law firms that want a dedicated legal CRM with powerful intake automation, marketing, and lead tracking — especially alongside Clio, MyCase, or another practice management system",
+    notGreatFor:
+      "Firms looking for an all-in-one that replaces practice management; firms with fewer than 3 users; budget-sensitive solo practitioners",
+    verdict:
+      "Lawmatics is the best-in-class legal CRM for law firms serious about client intake and marketing automation. It doesn't try to replace Clio or MyCase — it supercharges them. When integrated with your practice management platform, Lawmatics creates a seamless pipeline from first lead to signed client, with automation that follows up, qualifies, and converts prospects around the clock. For high-growth law firms where marketing ROI and intake conversion matter, Lawmatics is the missing piece.",
+    pros: [
+      "Best-in-class intake automation — follows up with leads automatically 24/7",
+      "Deep integrations with Clio, MyCase, Smokeball, and other PM platforms",
+      "Marketing automation rivals what enterprise B2B companies use",
+      "E-signature, SMS, intake forms, and scheduling all built in",
+      "AI-powered lead qualification (QualifyAI add-on) for high-volume intake",
+      "Detailed ROI and source attribution reporting",
+      "Purpose-built for legal — understands conflict checking, matter types, and legal intake workflows",
+    ],
+    cons: [
+      "Pricing is not publicly listed — requires a sales conversation to get a quote",
+      "3 user minimum makes it impractical for truly solo practitioners",
+      "Not a full practice management replacement — you still need Clio or similar",
+      "Time & Billing is an add-on, not included in base plans",
+      "Can be expensive when adding both the platform and add-ons",
+      "Learning curve for setting up complex automation sequences",
+    ],
+    keyFeatures: [
+      "Lead management and intake pipeline",
+      "Automated follow-up sequences (email, SMS, voicemail drop)",
+      "E-signature (included in all plans)",
+      "Legal calendar and appointment scheduling",
+      "Round-robin scheduling (Premium+)",
+      "Conflict checking",
+      "Document automation and file requests",
+      "Client portal",
+      "Marketing automation (Premium+)",
+      "Email marketing with HTML builder",
+      "ROI and source tracking (Premium+)",
+      "QualifyAI — AI lead qualification (add-on)",
+      "Time & Billing (add-on)",
+      "LMPay payment processing",
+      "Clio, MyCase, Smokeball integrations",
+    ],
+    integrations: 30,
+    metaTitle: "Lawmatics Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaDescription:
+      "In-depth Lawmatics review for 2026. See features, custom pricing, integrations with Clio, pros & cons. The best legal CRM for law firm intake automation.",
+    intro:
+      "Lawmatics occupies a unique position in the legal technology landscape: it's not a practice management platform — it's the CRM and intake automation layer that makes your practice management platform dramatically more effective. Founded in 2018 by attorney Matt Spiegel, Lawmatics was purpose-built to solve a problem that Clio, MyCase, and PracticePanther never fully addressed: systematic lead management, automated follow-up, and marketing attribution for law firms.",
+    deepDive: `## Who Is Lawmatics For?
+
+Lawmatics is purpose-built for law firms that:
+
+- **Run active marketing campaigns** and want to track ROI from every lead source
+- **Have intake volume problems** — too many leads slipping through the cracks
+- **Use Clio, MyCase, or Smokeball** and want to supercharge their intake process
+- **Want to automate follow-up** so no prospect is left waiting for a callback
+- **Compete in high-volume practice areas** — personal injury, immigration, estate planning, family law
+
+Lawmatics is *not* the right fit for a solo attorney who simply needs to track cases and bill hours. For that, Clio's Expand plan or MyCase Pro covers the CRM angle sufficiently. Lawmatics shines for firms with a marketing mindset.
+
+## Lawmatics' Core Strengths
+
+### Intake Automation That Actually Works
+
+Lawmatics' defining feature is its automation engine. When a potential client fills out a contact form, calls your firm, or submits a referral, Lawmatics immediately triggers a customizable sequence: an automated email acknowledgment, a text message, a task for your intake coordinator, and a scheduled follow-up call — all within minutes, all without human intervention.
+
+This matters because the data is clear: law firms that follow up within 5 minutes are dramatically more likely to convert a lead than those who follow up within an hour. Most firms can't achieve that response time manually. Lawmatics makes it automatic.
+
+### Legal-Specific CRM Features
+
+Unlike generic CRM platforms (HubSpot, Salesforce) adapted for law firms, Lawmatics was built from the ground up for legal. The conflict checking understands legal relationships. The intake forms ask the right legal questions. The pipeline stages match real legal intake processes: Inquiry → Consultation Scheduled → Consultation Completed → Engagement Agreement Sent → Signed.
+
+The ROI tracking understands referral sources the way law firms think about them: paid advertising, referral attorneys, organic search, community events. You can see which marketing channels produce signed clients — not just leads.
+
+### Integrations With the Major PM Platforms
+
+Lawmatics' integration with Clio is particularly tight. When a lead in Lawmatics converts to a client, a matter can be automatically created in Clio — with all contact information, matter type, intake notes, and documents synced over. Similar integrations exist for MyCase, Smokeball, Filevine, and others.
+
+This means Lawmatics functions as the front-end of your firm's client journey, with your PM platform handling the back-end once engagement begins. The transition is seamless for both staff and clients.
+
+### QualifyAI: AI-Powered Lead Qualification
+
+The QualifyAI add-on uses AI to immediately evaluate incoming leads against your firm's criteria — practice area fit, case value thresholds, geographic restrictions — and routes them accordingly. High-value leads get immediate human follow-up; leads outside your criteria get an automated response with a referral. For high-volume intake practices, this saves significant staff time.
+
+## Lawmatics' Key Weaknesses
+
+### No Public Pricing
+
+This is the most significant friction point for buyers. Lawmatics requires a sales conversation to get pricing, which means comparing it to other tools is harder. The 3-user minimum also means solo practitioners are effectively excluded from the platform.
+
+Based on market research and user reports, Lawmatics pricing is typically in the range of hundreds of dollars per month for small firms, making it a premium product. The value proposition holds when you factor in automation replacing staff hours, but the upfront cost requires justification.
+
+### Not a Practice Management Replacement
+
+Lawmatics is a CRM and intake tool — it is not a replacement for Clio, MyCase, or PracticePanther. You need both. The Time & Billing add-on covers basic invoicing, but firms will still need a dedicated PM platform for full case management, document storage, trust accounting, and court calendar management. For firms looking to consolidate to one platform, Lawmatics isn't the answer.
+
+### Learning Curve for Advanced Automations
+
+Setting up sophisticated automation sequences — multi-stage workflows, conditional logic, marketing campaigns — requires time investment. The platform is powerful, but power comes with complexity. Expect 2–4 weeks before your automations run smoothly.
+
+## Lawmatics vs. Clio Grow
+
+The most common comparison is Lawmatics vs. Clio Grow, the CRM add-on built into Clio's Expand plan ($149/user/month).
+
+Clio Grow is perfectly adequate for firms that want basic lead tracking and intake forms alongside Clio Manage. But Lawmatics' automation capabilities are substantially more sophisticated — multi-step email sequences, SMS drip campaigns, AI qualification, full marketing attribution — things Clio Grow does not offer.
+
+Firms serious about growth marketing typically outgrow Clio Grow and move to Lawmatics as a separate layer. Firms with modest intake volumes and no marketing sophistication are fine staying with Clio Grow.
+
+## Pricing Overview
+
+Lawmatics offers three plans — Essential, Premium, and Enterprise — all with custom pricing based on firm size and needs. All plans require annual contracts and a minimum of 3 users. Time & Billing and QualifyAI are add-ons with separate pricing.
+
+The best way to get accurate pricing for your firm size is to request a demo, where the Lawmatics team will quote based on your user count and desired plan.
+
+## Bottom Line
+
+Lawmatics is the best legal CRM available — full stop. If your law firm generates more than a handful of leads per month, has a marketing budget, or has lost clients due to slow follow-up, Lawmatics will generate positive ROI quickly. It works best alongside a dedicated practice management platform like Clio or MyCase. For high-growth firms with a marketing mindset, it's essential infrastructure.`,
+    faqs: [
+      {
+        question: "What does Lawmatics cost?",
+        answer:
+          "Lawmatics does not publish public pricing. All plans are custom-quoted based on firm size and feature needs. A minimum of 3 users is required for Essential and Premium plans. To get pricing, you'll need to request a demo from the Lawmatics team. The Time & Billing add-on and QualifyAI are priced separately.",
+      },
+      {
+        question: "Does Lawmatics replace Clio or MyCase?",
+        answer:
+          "No. Lawmatics is a legal CRM and intake automation platform — it's designed to work alongside Clio, MyCase, Smokeball, or other practice management platforms, not replace them. Lawmatics handles the lead-to-client journey (intake, follow-up, marketing), while your PM platform handles active matter management, billing, and trust accounting.",
+      },
+      {
+        question: "How does Lawmatics integrate with Clio?",
+        answer:
+          "Lawmatics has a direct integration with Clio Manage. When a prospect converts to a client in Lawmatics, you can automatically create a matter in Clio with all contact information, intake notes, and documents synced. This eliminates duplicate data entry between your CRM and practice management system.",
+      },
+      {
+        question: "Is Lawmatics good for solo attorneys?",
+        answer:
+          "Lawmatics requires a minimum of 3 users and has custom pricing that typically makes it cost-prohibitive for solo practitioners. Solo attorneys are better served by Clio Grow (included in Clio Expand at $149/user/month) or MyCase Pro's built-in intake features. Lawmatics becomes cost-effective for firms with active marketing and meaningful lead volume.",
+      },
+      {
+        question: "What is QualifyAI in Lawmatics?",
+        answer:
+          "QualifyAI is an add-on feature that uses artificial intelligence to immediately evaluate and qualify incoming leads against your firm's criteria — practice area fit, case value, geography — and route them accordingly. High-value leads get escalated for immediate human follow-up; poor-fit leads get an automated response. It's designed for high-volume intake practices where manual lead qualification is a bottleneck.",
+      },
+    ],
+  },
+
+  filevine: {
+    slug: "filevine",
+    name: "Filevine",
+    tagline: "The AI-powered case management platform for high-stakes and high-volume law firms",
+    logo: "/logos/filevine.svg",
+    website: "https://www.filevine.com",
+    affiliateUrl: "https://www.filevine.com/demo/",
+    founded: 2015,
+    headquarters: "Salt Lake City, UT",
+    overallRating: 4.4,
+    ratings: {
+      easeOfUse: 4.1,
+      features: 4.8,
+      valueForMoney: 4.0,
+      customerSupport: 4.3,
+      mobileApp: 4.2,
+    },
+    pricing: [
+      {
+        name: "Custom Platform Package",
+        price: "Custom pricing",
+        billingNote: "All packages are custom-built. Annual contracts typical. Contact for quote.",
+        features: [
+          "Matter and project management",
+          "Document management and automation",
+          "Time tracking and billing",
+          "Client portal",
+          "Task management",
+          "Calendar and deadline management",
+          "Contact management",
+          "Integrations (native and partner)",
+        ],
+      },
+      {
+        name: "With LOIS (AI Suite)",
+        price: "Custom pricing",
+        billingNote: "AI features available as add-on or bundled. Contact for quote.",
+        features: [
+          "Everything in Platform",
+          "AI document drafting (Word integration)",
+          "AI deposition intelligence (real-time)",
+          "AI medical record analysis",
+          "AI contract intelligence",
+          "AI intake automation",
+          "Generative document creation",
+          "Contextual case Q&A",
+        ],
+      },
+      {
+        name: "Enterprise (Full Suite)",
+        price: "Custom pricing",
+        billingNote: "Large firm and multi-office deployments. Includes premium support and onboarding.",
+        features: [
+          "Full platform + LOIS AI",
+          "Periscope business analytics",
+          "Timely (court deadline automation)",
+          "DataBridge data access",
+          "Advanced integrations",
+          "Dedicated implementation partner",
+          "Custom workflows",
+          "Priority support",
+        ],
+      },
+    ],
+    freeTrial: "Demo available (no self-serve trial — custom implementation required)",
+    bestFor:
+      "Contingency fee firms (personal injury, mass tort, workers' comp), mid-size to large litigation practices, firms processing high case volumes where case data and AI can drive material efficiency gains",
+    notGreatFor:
+      "Solo attorneys, small hourly billing firms, practices that want simple time-and-billing software; firms without budget for a premium platform and implementation costs",
+    verdict:
+      "Filevine is the most feature-rich case management platform in the industry — and among the most powerful for the right firm. With LOIS, its AI suite, Filevine has moved beyond case management into legal intelligence: real-time deposition AI, document drafting, medical record analysis, and contract review. For personal injury, mass tort, and complex litigation firms with the volume to justify the investment, Filevine's ROI can be substantial. For smaller or hourly-billing practices, it's more platform than you need.",
+    pros: [
+      "Most advanced AI suite in legal software (LOIS: deposition, document, medical records, contracts)",
+      "Highly customizable — project types can be configured for any practice area",
+      "Strong for high-volume contingency practices (PI, mass tort, workers' comp)",
+      "Periscope analytics provides deep business intelligence",
+      "Timely handles automatic court deadline calculation nationwide",
+      "Robust document management with version control",
+      "Dedicated implementation partners for enterprise deployments",
+      "Client portal included for secure communication",
+    ],
+    cons: [
+      "No public pricing — requires custom quote and sales process",
+      "Premium price point with annual contracts",
+      "Implementation can take weeks — not plug-and-play",
+      "Overkill for simple time-and-billing or solo practitioners",
+      "Customer support quality varies by account size",
+      "Mobile app is functional but less polished than Clio or MyCase",
+      "Learning curve is steeper than simpler platforms",
+    ],
+    keyFeatures: [
+      "Matter and project management (fully customizable)",
+      "AI document drafting with Microsoft Word integration (LOIS)",
+      "Real-time deposition intelligence with live transcription (LOIS)",
+      "AI medical record analysis and timeline generation (LOIS)",
+      "AI contract intelligence and obligation tracking (LOIS)",
+      "Timely — automatic court deadline calculation (all US jurisdictions)",
+      "Periscope — business analytics and performance dashboards",
+      "Document management with advanced search",
+      "Time tracking and online billing",
+      "Client portal with secure messaging and document sharing",
+      "Lead capture and intake automation",
+      "Court reporter scheduling (AI-assisted)",
+      "eSignature collection",
+      "DataBridge — real-time data access and export",
+      "Native and partner integrations",
+    ],
+    integrations: 60,
+    metaTitle: "Filevine Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaDescription:
+      "In-depth Filevine review for 2026. AI case management, LOIS AI suite, custom pricing, and who it's best for. For personal injury and litigation firms.",
+    intro:
+      "Filevine has emerged as one of the most technically ambitious legal software platforms in the industry. Founded in 2015 in Salt Lake City, it began as a case management tool for contingency fee law firms — personal injury, mass tort, workers' compensation — and has since evolved into a full legal intelligence platform with LOIS, an AI suite that spans document drafting, deposition analysis, medical record review, and contract intelligence. If Clio is the Swiss Army knife of legal software, Filevine is the scalpel designed for specific, high-stakes work.",
+    deepDive: `## Who Is Filevine For?
+
+Filevine's power user is the contingency fee law firm:
+
+- **Personal injury practices** processing dozens or hundreds of cases simultaneously
+- **Mass tort firms** tracking complex multi-plaintiff litigation
+- **Workers' compensation practices** managing ongoing medical and legal timelines
+- **Mid-size to large litigation firms** where case data complexity justifies sophisticated tools
+- **Firms with AI ambitions** — Filevine's LOIS suite is the most complete legal AI package available
+
+Filevine is *not* the right fit for:
+
+- Solo attorneys or very small firms who need simple time-and-billing
+- Hourly billing practices where case complexity is low
+- Firms looking for a simple, plug-and-play solution
+- Budget-constrained practices unable to absorb premium pricing and implementation costs
+
+## Filevine's Core Strengths
+
+### LOIS: The Most Complete Legal AI Suite
+
+Filevine's LOIS (Legal Operating Intelligence System) suite is the most ambitious AI implementation in legal software. It spans:
+
+**AI Document Drafting** — Integrated directly into Microsoft Word, LOIS drafts documents with AI grounded in your actual matter data. It enforces standards, handles redlining, and sources recommendations directly from case facts.
+
+**Deposition Intelligence** — Real-time transcription during depositions, goal-based guidance during examination, and post-deposition summaries that surface admissions and key testimony. The follow-up signal feature flags matters requiring action after each session.
+
+**Medical Record Analysis** — For personal injury and workers' comp practices, analyzing medical records is a massive time sink. LOIS generates automated medical timelines, surfaces key events, and provides case-strengthening insights from unstructured clinical data.
+
+**Contract Intelligence** — AI extraction of key terms, obligations, and risks from contracts. For firms handling commercial matters alongside litigation, this accelerates contract review significantly.
+
+This suite positions Filevine years ahead of general legal practice management platforms on AI capability.
+
+### Highly Customizable Project Types
+
+Filevine's case management is built around customizable "project types" — you define the fields, stages, sections, and workflows for each practice area. A personal injury matter looks completely different from a workers' comp matter, which looks different from a commercial dispute. Filevine adapts to the work, rather than forcing the work to adapt to the software.
+
+Most legal PM platforms have a generic matter structure with some custom fields bolted on. Filevine's customization runs much deeper — every section, every field, every workflow stage can be configured. For firms with complex, specialized practices, this is a significant advantage.
+
+### Timely: Automatic Court Deadline Calculation
+
+Timely is Filevine's deadline management module that automatically calculates court deadlines for any jurisdiction in the United States based on the rules of that specific court. When you enter a trial date or filing date, Timely automatically populates the full calendar of required deadlines — motions deadlines, discovery cutoffs, expert designation dates — without manual calculation.
+
+This eliminates one of the most consequential error risks in litigation practice: missed deadlines from manual calendar calculation.
+
+### Periscope: Business Analytics
+
+Periscope provides business intelligence beyond what most legal PM platforms offer — firm-wide performance dashboards, case outcome analysis, attorney productivity metrics, marketing ROI, and financial forecasting. For firms managing large caseloads where business visibility matters, Periscope provides the data layer.
+
+## Filevine's Key Weaknesses
+
+### Custom Pricing Creates Friction
+
+Filevine does not publish pricing. All packages are custom-built based on your firm's size, practice areas, and module selections. This creates friction in the buying process — you can't evaluate cost without a sales conversation. User reports suggest pricing typically falls in the range of $125–250/user/month for fully-configured implementations, though exact costs vary significantly by firm.
+
+The custom pricing also means significant negotiation happens between the firm and Filevine's sales team. Larger firms generally get better rates; smaller firms may find the minimum spend hard to justify.
+
+### Implementation Time and Cost
+
+Filevine is not plug-and-play. A proper Filevine implementation — configuring project types, setting up workflows, migrating data, training staff — typically takes 4–8 weeks with the help of a Certified Implementation Partner. Implementation costs are a real budget consideration that should be factored into any evaluation.
+
+This is appropriate for the platform's power — you're not setting up a simple CRM, you're configuring a firm-wide operational system. But firms accustomed to self-serve software setup will be surprised by the process.
+
+### Primarily Built for Contingency Practices
+
+Filevine's roots are in PI and mass tort. While the platform supports hourly billing, its feature depth (medical records AI, deposition tools, complex litigation workflows) is most relevant to contingency practices. Hourly billing firms may pay for features they'll never use.
+
+## Filevine vs. Clio
+
+For personal injury and litigation firms, Filevine wins handily on AI features, customization, and practice-specific depth. For general practice, small firms, or solo attorneys, Clio's simplicity, broader integration library, and transparent pricing make it the better choice. These platforms rarely compete directly — Clio serves general practice, Filevine serves specialized litigation.
+
+## Pricing Overview
+
+Filevine's pricing is entirely custom. All packages are built around the firm's specific module selections:
+
+- **Core Platform** — Matter management, documents, billing, client portal
+- **LOIS AI Suite** — Document AI, deposition AI, medical records AI, contract intelligence
+- **Periscope** — Business analytics
+- **Timely** — Automatic deadline management
+- **DataBridge** — Real-time data access
+
+Expect annual contracts with pricing negotiated per firm. Request a demo to get a formal quote.
+
+## Bottom Line
+
+Filevine is the best legal case management platform for contingency fee law firms and complex litigation practices. The LOIS AI suite is genuinely ahead of anything competitors offer. If your firm handles personal injury, mass tort, workers' compensation, or complex litigation at meaningful volume, Filevine will generate ROI through faster document production, reduced medical record review time, and eliminated deadline-calculation errors. For most other firm types, it's more platform than you need.`,
+    faqs: [
+      {
+        question: "How much does Filevine cost?",
+        answer:
+          "Filevine does not publish public pricing — all packages are custom-built for each firm. Based on user reports and industry data, expect pricing in the range of $125–250/user/month for full implementations, though exact costs depend on modules selected, firm size, and contract terms. Request a demo to get a custom quote for your firm.",
+      },
+      {
+        question: "Is Filevine good for personal injury law firms?",
+        answer:
+          "Yes — Filevine is considered the leading case management platform for personal injury law firms. It was purpose-built for PI practices and excels at high-volume case tracking, medical record management (with AI analysis), settlement tracking, and litigation deadlines. The LOIS AI suite's medical record analysis and deposition intelligence tools are particularly valuable for PI practices.",
+      },
+      {
+        question: "What is LOIS in Filevine?",
+        answer:
+          "LOIS (Legal Operating Intelligence System) is Filevine's AI suite. It includes AI document drafting in Microsoft Word, real-time deposition intelligence with live transcription, AI medical record analysis and timeline generation, AI contract review, and AI-powered intake automation. LOIS is available as an add-on or bundled with enterprise packages.",
+      },
+      {
+        question: "Does Filevine have a free trial?",
+        answer:
+          "No — Filevine does not offer a self-serve free trial. Implementation requires configuration of project types and workflows, which makes a generic trial impractical. Instead, Filevine offers demos with their team. For enterprise evaluations, some firms negotiate pilot programs before full commitment.",
+      },
+      {
+        question: "How long does Filevine implementation take?",
+        answer:
+          "A typical Filevine implementation takes 4–8 weeks for small to mid-size firms, and can take longer for large enterprises or complex multi-office deployments. Filevine has a network of Certified Implementation Partners who assist with configuration, data migration, workflow setup, and staff training. Implementation costs should be factored into your total budget.",
+      },
+    ],
+  },
 };
 
 export function getTool(slug: string): ReviewTool | undefined {
