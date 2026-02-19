@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
+  },
+  verification: {
+    google: "ADD_YOUR_GSC_VERIFICATION_CODE_HERE", // Get from Google Search Console
   },
   openGraph: {
     type: "website",
@@ -156,6 +160,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="min-h-screen font-sans antialiased bg-white">
         {children}
+        <Analytics />
       </body>
     </html>
   );
