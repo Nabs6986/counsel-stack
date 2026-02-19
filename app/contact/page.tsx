@@ -1,18 +1,46 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MessageSquare, Send } from "lucide-react";
+import { Mail, MessageSquare, Send, CheckCircle } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 
+// Formspree endpoint - create at formspree.io/forms
+const FORMSPREE_CONTACT = "https://formspree.io/f/counselstack-contact";
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would POST to an API route (e.g., Resend or Formspree)
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch(FORMSPREE_CONTACT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...form,
+          _subject: `CounselStack Contact: ${form.subject}`,
+        }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        // Fallback: open mailto if Formspree fails
+        window.location.href = `mailto:editorial@counselstack.io?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+      }
+    } catch {
+      // Fallback to mailto
+      window.location.href = `mailto:editorial@counselstack.io?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -38,12 +66,10 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     {[
                       { icon: Mail, label: "Editorial", email: "editorial@counselstack.io" },
-                      { icon: MessageSquare, label: "Corrections", email: "corrections@counselstack.io" },
+                      { icon: MessageSquare, label: "Partnerships", email: "partners@counselstack.io" },
                     ].map((item) => (
                       <div key={item.label} className="flex items-start gap-3">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
-                          <item.icon className="h-4 w-4" />
-                        </div>
+                        <item.icon className="h-5 w-5 text-brand-600 mt-0.5" />
                         <div>
                           <p className="text-sm font-medium text-slate-900">{item.label}</p>
                           <a href={`mailto:${item.email}`} className="text-sm text-brand-600 hover:text-brand-700">
@@ -55,10 +81,10 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="rounded-xl bg-slate-50 border border-slate-200 p-5">
-                  <h3 className="font-semibold text-slate-900 mb-2 text-sm">Response Times</h3>
+                <div>
+                  <h2 className="font-semibold text-slate-900 mb-3">Response Time</h2>
                   <p className="text-sm text-slate-600">
-                    We respond to most messages within 2–3 business days. Pricing corrections and factual errors are prioritized and addressed within 24 hours.
+                    We typically respond within 1–2 business days. For urgent corrections to published content, please include &quot;URGENT&quot; in your subject line.
                   </p>
                 </div>
               </div>
@@ -66,73 +92,88 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div className="md:col-span-3">
                 {submitted ? (
-                  <div className="rounded-2xl bg-green-50 border border-green-200 p-8 text-center">
-                    <div className="text-4xl mb-4">✅</div>
-                    <h2 className="text-xl font-bold text-green-900 mb-2">Message sent!</h2>
-                    <p className="text-green-700">We&apos;ll get back to you within 2–3 business days.</p>
+                  <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+                    <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold text-slate-900 mb-2">Message Sent!</h3>
+                    <p className="text-slate-600">
+                      Thanks for reaching out. We&apos;ll get back to you within 1–2 business days.
+                    </p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                        <input
-                          type="text"
-                          id="name"
-                          required
-                          value={form.name}
-                          onChange={(e) => setForm({ ...form, name: e.target.value })}
-                          className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
-                          placeholder="Your name"
-                        />
+                    {error && (
+                      <div className="bg-red-50 text-red-700 px-4 py-3 rounded-lg text-sm">
+                        {error}
                       </div>
-                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                        <input
-                          type="email"
-                          id="email"
-                          required
-                          value={form.email}
-                          onChange={(e) => setForm({ ...form, email: e.target.value })}
-                          className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
-                          placeholder="you@yourfirm.com"
-                        />
-                      </div>
+                    )}
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                        Name
+                      </label>
+                      <input
+                        id="name"
+                        type="text"
+                        value={form.name}
+                        onChange={(e) => setForm({ ...form, name: e.target.value })}
+                        required
+                        placeholder="Your name"
+                        className="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                      />
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">Subject</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        value={form.email}
+                        onChange={(e) => setForm({ ...form, email: e.target.value })}
+                        required
+                        placeholder="you@yourfirm.com"
+                        className="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">
+                        Subject
+                      </label>
                       <select
                         id="subject"
                         value={form.subject}
                         onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                        className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
                         required
+                        className="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white"
                       >
-                        <option value="">Select a topic</option>
-                        <option value="general">General question</option>
-                        <option value="correction">Pricing or factual correction</option>
-                        <option value="review">Request a review</option>
-                        <option value="partnership">Partnership inquiry</option>
-                        <option value="other">Other</option>
+                        <option value="">Select a topic...</option>
+                        <option value="Correction">Content Correction</option>
+                        <option value="Question">General Question</option>
+                        <option value="Partnership">Partnership Inquiry</option>
+                        <option value="Vendor">Vendor / PR Inquiry</option>
+                        <option value="Other">Other</option>
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                      <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                        Message
+                      </label>
                       <textarea
                         id="message"
-                        rows={5}
-                        required
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
-                        className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500 resize-none"
+                        required
+                        rows={5}
                         placeholder="Tell us what's on your mind..."
+                        className="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
                       />
                     </div>
                     <button
                       type="submit"
-                      className="w-full flex items-center justify-center gap-2 rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-700 transition-colors"
+                      disabled={loading}
+                      className="w-full px-6 py-3 bg-brand-600 hover:bg-brand-700 disabled:opacity-50 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
                     >
-                      <Send className="h-4 w-4" /> Send Message
+                      {loading ? "Sending..." : "Send Message"}
+                      <Send className="h-4 w-4" />
                     </button>
                   </form>
                 )}

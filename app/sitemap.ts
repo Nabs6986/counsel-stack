@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, priority: 0.8 },
     { url: `${baseUrl}/about`, priority: 0.6 },
     { url: `${baseUrl}/contact`, priority: 0.5 },
+    { url: `${baseUrl}/waitlist`, priority: 0.7 },
   ].map((page) => ({
     url: page.url,
     lastModified: now,
