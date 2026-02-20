@@ -6,7 +6,7 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 
 // Formspree endpoint - create at formspree.io/forms
-const FORMSPREE_CONTACT = "https://formspree.io/f/counselstack-contact";
+const FORMSPREE_CONTACT = "https://formspree.io/f/meellgye";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);

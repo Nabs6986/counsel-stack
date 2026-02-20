@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 // Formspree endpoint - create at formspree.io/forms
-const FORMSPREE_WAITLIST = "https://formspree.io/f/counselstack-waitlist";
+const FORMSPREE_WAITLIST = "https://formspree.io/f/meellgye";
 
 const FIRM_SIZES = [
   "Solo practitioner",
