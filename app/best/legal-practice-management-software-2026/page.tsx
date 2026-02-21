@@ -5,11 +5,19 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Best Legal Practice Management Software 2026 | CounselStack",
   description:
     "The best legal practice management software in 2026, ranked by experts. Clio, MyCase, PracticePanther, Smokeball, and CosmoLex — with real pricing and honest verdicts.",
+  alternates: {
+    canonical: `${baseUrl}/best/legal-practice-management-software-2026`,
+  },
 };
 
 const jsonLd = {
@@ -109,9 +117,33 @@ const picks = [
 ];
 
 export default function BestLegalPMPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Best", url: `${baseUrl}/best` },
+    {
+      name: "Best Legal Practice Management Software 2026",
+      url: `${baseUrl}/best/legal-practice-management-software-2026`,
+    },
+  ];
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <FAQSchema
+        faqs={jsonLd.mainEntity.map((faq) => ({
+          question: faq.name,
+          answer: faq.acceptedAnswer.text,
+        }))}
+      />
+      <ItemListSchema
+        name="Best Legal Practice Management Software 2026"
+        url={`${baseUrl}/best/legal-practice-management-software-2026`}
+        items={picks.map((pick) => ({
+          name: pick.name,
+          url: `${baseUrl}/reviews/${pick.slug}`,
+          description: pick.highlight,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 
       <main className="min-h-screen">

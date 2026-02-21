@@ -6,8 +6,8 @@ import { Menu, X, Scale } from "lucide-react";
 
 const navigation = [
   { name: "Reviews", href: "/reviews" },
-  { name: "Compare", href: "/vs/clio-vs-mycase" },
-  { name: "Best Of", href: "/best/legal-practice-management-software-2026" },
+  { name: "Compare", href: "/compare" },
+  { name: "Best Of", href: "/best" },
   { name: "Pricing", href: "/pricing" },
   { name: "Blog", href: "/blog" },
 ];

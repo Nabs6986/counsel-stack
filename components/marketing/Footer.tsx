@@ -10,9 +10,10 @@ const footerLinks = {
     { name: "CosmoLex Review", href: "/reviews/cosmolex" },
   ],
   Compare: [
-    { name: "Clio vs MyCase", href: "/vs/clio-vs-mycase" },
-    { name: "Clio vs PracticePanther", href: "/vs/clio-vs-practicepanther" },
-    { name: "MyCase vs PracticePanther", href: "/vs/mycase-vs-practicepanther" },
+    { name: "All Comparisons", href: "/compare" },
+    { name: "Clio vs MyCase", href: "/compare/clio-vs-mycase" },
+    { name: "Clio vs PracticePanther", href: "/compare/clio-vs-practicepanther" },
+    { name: "MyCase vs PracticePanther", href: "/compare/mycase-vs-practicepanther" },
     { name: "Pricing Comparison", href: "/pricing" },
   ],
   "Best Of": [
@@ -24,6 +25,7 @@ const footerLinks = {
   Company: [
     { name: "About Us", href: "/about" },
     { name: "Blog", href: "/blog" },
+    { name: "Affiliate Disclosure", href: "/affiliate-disclosure" },
     { name: "Contact", href: "/contact" },
   ],
 };
@@ -72,7 +74,7 @@ export function Footer() {
           </p>
           <p className="text-xs text-slate-500 max-w-2xl">
             <strong className="text-slate-400">Affiliate Disclosure:</strong> CounselStack may earn commissions when you click links and purchase software through our site. This does not influence our editorial ratings or reviews. We independently evaluate every product.{" "}
-            <Link href="/about#affiliate-disclosure" className="underline hover:text-slate-300">
+            <Link href="/affiliate-disclosure" className="underline hover:text-slate-300">
               Learn more
             </Link>
           </p>

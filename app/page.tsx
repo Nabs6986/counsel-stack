@@ -195,9 +195,9 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { title: "Clio vs MyCase", href: "/vs/clio-vs-mycase", desc: "Value vs. ecosystem" },
-              { title: "Clio vs PracticePanther", href: "/vs/clio-vs-practicepanther", desc: "Integrations vs. native features" },
-              { title: "MyCase vs PracticePanther", href: "/vs/mycase-vs-practicepanther", desc: "Price vs. automation" },
+              { title: "Clio vs MyCase", href: "/compare/clio-vs-mycase", desc: "Value vs. ecosystem" },
+              { title: "Clio vs PracticePanther", href: "/compare/clio-vs-practicepanther", desc: "Integrations vs. native features" },
+              { title: "MyCase vs PracticePanther", href: "/compare/mycase-vs-practicepanther", desc: "Price vs. automation" },
             ].map((comp) => (
               <Link
                 key={comp.href}

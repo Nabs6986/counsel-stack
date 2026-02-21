@@ -4,11 +4,18 @@ import { Check, X, ExternalLink } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Legal Practice Management Software Pricing Comparison 2026 | CounselStack",
   description:
     "Compare pricing for Clio, MyCase, PracticePanther, Smokeball, and CosmoLex. Real 2026 pricing including hidden fees, add-ons, and annual vs monthly rates.",
+  alternates: {
+    canonical: `${baseUrl}/pricing`,
+  },
 };
 
 const jsonLd = {
@@ -147,9 +154,20 @@ const featureRows = [
 ];
 
 export default function PricingPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Pricing", url: `${baseUrl}/pricing` },
+  ];
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <FAQSchema
+        faqs={jsonLd.mainEntity.map((faq) => ({
+          question: faq.name,
+          answer: faq.acceptedAnswer.text,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 
       <main className="min-h-screen">

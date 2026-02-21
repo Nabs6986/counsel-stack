@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     { url: baseUrl, priority: 1.0 },
     { url: `${baseUrl}/reviews`, priority: 0.9 },
+    { url: `${baseUrl}/compare`, priority: 0.9 },
+    { url: `${baseUrl}/best`, priority: 0.85 },
     { url: `${baseUrl}/pricing`, priority: 0.9 },
     { url: `${baseUrl}/best/legal-practice-management-software-2026`, priority: 0.95 },
     { url: `${baseUrl}/best/solo-practitioners`, priority: 0.85 },
@@ -17,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/best/free-budget-options`, priority: 0.8 },
     { url: `${baseUrl}/blog`, priority: 0.8 },
     { url: `${baseUrl}/about`, priority: 0.6 },
+    { url: `${baseUrl}/affiliate-disclosure`, priority: 0.6 },
     { url: `${baseUrl}/contact`, priority: 0.5 },
     { url: `${baseUrl}/waitlist`, priority: 0.7 },
   ].map((page) => ({
@@ -34,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const comparisonPages = getAllComparisonSlugs().map((slug) => ({
-    url: `${baseUrl}/vs/${slug}`,
+    url: `${baseUrl}/compare/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.85,

@@ -1,9 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Clock, ArrowLeft, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
 import { getPost, getAllPostSlugs, getAllPosts } from "../_data/posts";
 import { formatDate } from "@/lib/utils";
 
@@ -19,13 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return { title: "Post Not Found" };
+  const canonicalUrl = `https://counselstack.io/blog/${slug}`;
   return {
     title: post.metaTitle,
     description: post.metaDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.metaDescription,
       type: "article",
+      url: canonicalUrl,
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt || post.publishedAt,
       authors: [post.author.name],
@@ -47,62 +56,42 @@ export default async function BlogPostPage({ params }: Props) {
 
   const allPosts = getAllPosts();
   const relatedPosts = allPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.metaDescription,
-    "datePublished": post.publishedAt,
-    "dateModified": post.updatedAt || post.publishedAt,
-    "author": {
-      "@type": "Organization",
-      "name": post.author.name,
-      "url": "https://counselstack.io",
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "CounselStack",
-      "url": "https://counselstack.io",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://counselstack.io/logo.png",
-      },
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://counselstack.io/blog/${post.slug}`,
-    },
-  };
-
-  const faqSchema = post.faqs
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": post.faqs.map((faq) => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-        })),
-      }
-    : null;
+  const pageUrl = `https://counselstack.io/blog/${post.slug}`;
+  const breadcrumbItems = [
+    { name: "Home", url: "https://counselstack.io" },
+    { name: "Blog", url: "https://counselstack.io/blog" },
+    { name: post.title, url: pageUrl },
+  ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      {faqSchema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ArticleSchema
+        title={post.title}
+        description={post.metaDescription}
+        author={post.author.name}
+        datePublished={post.publishedAt}
+        dateModified={post.updatedAt}
+        url={pageUrl}
+      />
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSchema
+          faqs={post.faqs.map((faq) => ({
+            question: faq.question,
+            answer: faq.answer,
+          }))}
+        />
       )}
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 
       <main className="min-h-screen">
-        <div className="bg-slate-50 border-b border-slate-100 py-3">
-          <div className="mx-auto max-w-3xl px-6">
-            <Link href="/blog" className="flex items-center gap-1 text-sm text-slate-500 hover:text-brand-600">
-              <ArrowLeft className="h-3.5 w-3.5" /> All Posts
-            </Link>
-          </div>
-        </div>
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Blog", href: "/blog" },
+            { name: post.title, href: `/blog/${slug}` },
+          ]}
+        />
 
         {/* Header */}
         <section className="bg-gradient-to-b from-slate-50 to-white pt-10 pb-8">

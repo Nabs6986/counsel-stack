@@ -5,11 +5,19 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Best Legal Practice Management Software for Solo Attorneys 2026 | CounselStack",
   description:
     "The best legal PM software for solo practitioners in 2026. Affordable options with time tracking, billing, and client portal — without enterprise complexity.",
+  alternates: {
+    canonical: `${baseUrl}/best/solo-practitioners`,
+  },
 };
 
 const picks = [
@@ -70,8 +78,30 @@ const faqs = [
 ];
 
 export default function BestForSoloPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Best", url: `${baseUrl}/best` },
+    { name: "Best for Solo Practitioners", url: `${baseUrl}/best/solo-practitioners` },
+  ];
+
   return (
     <>
+      <FAQSchema
+        faqs={faqs.map((faq) => ({
+          question: faq.q,
+          answer: faq.a,
+        }))}
+      />
+      <ItemListSchema
+        name="Best Legal Practice Management Software for Solo Practitioners"
+        url={`${baseUrl}/best/solo-practitioners`}
+        items={picks.map((pick) => ({
+          name: pick.name,
+          url: `${baseUrl}/reviews/${pick.slug}`,
+          description: pick.why,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
       <main className="min-h-screen">
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-10">

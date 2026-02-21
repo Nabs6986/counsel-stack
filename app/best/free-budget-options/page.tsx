@@ -4,16 +4,45 @@ import { Check, ExternalLink, AlertCircle } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Free and Budget Legal Practice Management Software 2026 | CounselStack",
   description:
     "Best free and low-cost legal practice management software for 2026. Find affordable options for solo attorneys and small law firms.",
+  alternates: {
+    canonical: `${baseUrl}/best/free-budget-options`,
+  },
 };
 
 export default function FreeOptionsPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Best", url: `${baseUrl}/best` },
+    { name: "Free and Budget Options", url: `${baseUrl}/best/free-budget-options` },
+  ];
+
+  const trialOptions = [
+    { name: "MyCase", slug: "mycase" },
+    { name: "CosmoLex", slug: "cosmolex" },
+    { name: "Clio", slug: "clio" },
+    { name: "PracticePanther", slug: "practicepanther" },
+  ];
+
   return (
     <>
+      <ItemListSchema
+        name="Free and Budget Legal Practice Management Software Options"
+        url={`${baseUrl}/best/free-budget-options`}
+        items={trialOptions.map((option) => ({
+          name: option.name,
+          url: `${baseUrl}/reviews/${option.slug}`,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
       <main className="min-h-screen">
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-10">

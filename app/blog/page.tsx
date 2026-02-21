@@ -3,13 +3,20 @@ import Link from "next/link";
 import { Clock, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
 import { getAllPosts } from "./_data/posts";
 import { formatDate } from "@/lib/utils";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Legal Technology Blog — CounselStack",
   description:
     "Guides, comparisons, and practical advice on legal practice management software. Written for attorneys and law firm administrators.",
+  alternates: {
+    canonical: `${baseUrl}/blog`,
+  },
 };
 
 const posts = getAllPosts();
@@ -22,8 +29,23 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function BlogIndexPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Blog", url: `${baseUrl}/blog` },
+  ];
+
   return (
     <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <ItemListSchema
+        name="CounselStack Blog"
+        url={`${baseUrl}/blog`}
+        items={posts.map((post) => ({
+          name: post.title,
+          url: `${baseUrl}/blog/${post.slug}`,
+          description: post.excerpt,
+        }))}
+      />
       <Navbar />
       <main className="min-h-screen">
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-12">

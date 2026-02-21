@@ -1,10 +1,14 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, X, ArrowLeft } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ComparisonSchema } from "@/components/schema/ComparisonSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
 import { getComparison, getAllComparisonSlugs } from "../_data/comparisons";
 
 interface Props {
@@ -19,10 +23,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { comparison: slug } = await params;
   const comp = getComparison(slug);
   if (!comp) return { title: "Comparison Not Found" };
+  const canonicalUrl = `https://counselstack.io/compare/${slug}`;
   return {
     title: comp.metaTitle,
     description: comp.metaDescription,
-    openGraph: { title: comp.metaTitle, description: comp.metaDescription },
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: comp.metaTitle,
+      description: comp.metaDescription,
+      url: canonicalUrl,
+    },
   };
 }
 
@@ -36,30 +48,39 @@ export default async function ComparisonPage({ params }: Props) {
   const { comparison: slug } = await params;
   const comp = getComparison(slug);
   if (!comp) notFound();
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": comp.faqs.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-    })),
-  };
+  const pageUrl = `https://counselstack.io/compare/${slug}`;
+  const breadcrumbItems = [
+    { name: "Home", url: "https://counselstack.io" },
+    { name: "Compare", url: "https://counselstack.io/compare" },
+    { name: `${comp.tool1Name} vs ${comp.tool2Name}`, url: pageUrl },
+  ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <ComparisonSchema
+        products={[
+          { name: comp.tool1Name, description: comp.summaryReason },
+          { name: comp.tool2Name, description: comp.summaryReason },
+        ]}
+        url={pageUrl}
+      />
+      <FAQSchema
+        faqs={comp.faqs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 
       <main className="min-h-screen">
-        <div className="bg-slate-50 border-b border-slate-100 py-3">
-          <div className="mx-auto max-w-4xl px-6">
-            <Link href="/reviews" className="flex items-center gap-1 text-sm text-slate-500 hover:text-brand-600">
-              <ArrowLeft className="h-3.5 w-3.5" /> All Reviews
-            </Link>
-          </div>
-        </div>
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Compare", href: "/compare" },
+            { name: `${comp.tool1Name} vs ${comp.tool2Name}`, href: `/compare/${slug}` },
+          ]}
+        />
 
         {/* Hero */}
         <section className="bg-gradient-to-b from-slate-50 to-white pt-10 pb-8">
@@ -222,12 +243,12 @@ export default async function ComparisonPage({ params }: Props) {
             <h2 className="text-xl font-bold text-slate-900 mb-4">Other Comparisons</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { title: "Clio vs MyCase", href: "/vs/clio-vs-mycase" },
-                { title: "Clio vs PracticePanther", href: "/vs/clio-vs-practicepanther" },
-                { title: "MyCase vs PracticePanther", href: "/vs/mycase-vs-practicepanther" },
-                { title: "Clio vs CosmoLex", href: "/vs/clio-vs-cosmolex" },
+                { title: "Clio vs MyCase", href: "/compare/clio-vs-mycase" },
+                { title: "Clio vs PracticePanther", href: "/compare/clio-vs-practicepanther" },
+                { title: "MyCase vs PracticePanther", href: "/compare/mycase-vs-practicepanther" },
+                { title: "Clio vs CosmoLex", href: "/compare/clio-vs-cosmolex" },
               ]
-                .filter((c) => c.href !== `/vs/${slug}`)
+                .filter((c) => c.href !== `/compare/${slug}`)
                 .map((c) => (
                   <Link
                     key={c.href}

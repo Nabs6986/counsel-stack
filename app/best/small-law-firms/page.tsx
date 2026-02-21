@@ -5,11 +5,18 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Best Legal Practice Management Software for Small Law Firms 2026 | CounselStack",
   description:
     "Best legal PM software for small law firms (2–25 attorneys) in 2026. Compare Clio, MyCase, and PracticePanther for small firm needs.",
+  alternates: {
+    canonical: `${baseUrl}/best/small-law-firms`,
+  },
 };
 
 const picks = [
@@ -55,8 +62,24 @@ const picks = [
 ];
 
 export default function BestForSmallFirmsPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Best", url: `${baseUrl}/best` },
+    { name: "Best for Small Law Firms", url: `${baseUrl}/best/small-law-firms` },
+  ];
+
   return (
     <>
+      <ItemListSchema
+        name="Best Legal Practice Management Software for Small Law Firms"
+        url={`${baseUrl}/best/small-law-firms`}
+        items={picks.map((pick) => ({
+          name: pick.name,
+          url: `${baseUrl}/reviews/${pick.slug}`,
+          description: pick.why,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
       <main className="min-h-screen">
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-10">

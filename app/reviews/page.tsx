@@ -5,19 +5,41 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ItemListSchema } from "@/components/schema/ItemListSchema";
 import { getAllTools } from "./_data/tools";
+
+const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title: "Legal Practice Management Software Reviews 2026",
   description:
     "In-depth, independent reviews of Clio, MyCase, PracticePanther, Smokeball, and CosmoLex. Real pricing, real features, honest verdicts.",
+  alternates: {
+    canonical: `${baseUrl}/reviews`,
+  },
 };
 
 const tools = getAllTools();
 
 export default function ReviewsIndexPage() {
+  const breadcrumbItems = [
+    { name: "Home", url: baseUrl },
+    { name: "Reviews", url: `${baseUrl}/reviews` },
+  ];
+
   return (
     <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <ItemListSchema
+        name="Legal Practice Management Software Reviews"
+        url={`${baseUrl}/reviews`}
+        items={tools.map((tool) => ({
+          name: `${tool.name} Review`,
+          url: `${baseUrl}/reviews/${tool.slug}`,
+          description: tool.tagline,
+        }))}
+      />
       <Navbar />
       <main className="min-h-screen">
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-10">

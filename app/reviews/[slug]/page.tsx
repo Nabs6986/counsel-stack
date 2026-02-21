@@ -1,11 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, X, ExternalLink, ArrowLeft } from "lucide-react";
+import { Check, X, ExternalLink } from "lucide-react";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
+import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
+import { SoftwareApplicationSchema } from "@/components/schema/SoftwareApplicationSchema";
 import { getTool, getAllToolSlugs } from "../_data/tools";
 
 interface Props {
@@ -20,13 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const tool = getTool(slug);
   if (!tool) return { title: "Review Not Found" };
+  const canonicalUrl = `https://counselstack.io/reviews/${slug}`;
   return {
     title: tool.metaTitle,
     description: tool.metaDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: tool.metaTitle,
       description: tool.metaDescription,
       type: "article",
+      url: canonicalUrl,
     },
   };
 }
@@ -44,66 +53,40 @@ export default async function ReviewPage({ params }: Props) {
   const tool = getTool(slug);
   if (!tool) notFound();
 
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "name": tool.metaTitle,
-    "reviewBody": tool.verdict,
-    "author": {
-      "@type": "Organization",
-      "name": "CounselStack",
-      "url": "https://counselstack.io",
-    },
-    "itemReviewed": {
-      "@type": "SoftwareApplication",
-      "name": tool.name,
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "url": tool.website,
-      "offers": {
-        "@type": "Offer",
-        "price": tool.pricing[0].price.replace(/[^0-9]/g, ""),
-        "priceCurrency": "USD",
-      },
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": tool.overallRating,
-      "bestRating": 5,
-      "worstRating": 1,
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "CounselStack",
-      "url": "https://counselstack.io",
-    },
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": tool.faqs.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-    })),
-  };
+  const pageUrl = `https://counselstack.io/reviews/${slug}`;
+  const breadcrumbItems = [
+    { name: "Home", url: "https://counselstack.io" },
+    { name: "Reviews", url: "https://counselstack.io/reviews" },
+    { name: `${tool.name} Review`, url: pageUrl },
+  ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <SoftwareApplicationSchema
+        name={tool.name}
+        description={tool.verdict}
+        rating={tool.overallRating}
+        ratingCount={1}
+        price={tool.pricing[0].price}
+        url={pageUrl}
+      />
+      <FAQSchema
+        faqs={tool.faqs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        }))}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 
       <main className="min-h-screen">
-        {/* Breadcrumb */}
-        <div className="bg-slate-50 border-b border-slate-100 py-3">
-          <div className="mx-auto max-w-4xl px-6">
-            <Link href="/reviews" className="flex items-center gap-1 text-sm text-slate-500 hover:text-brand-600">
-              <ArrowLeft className="h-3.5 w-3.5" /> All Reviews
-            </Link>
-          </div>
-        </div>
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Reviews", href: "/reviews" },
+            { name: tool.name, href: `/reviews/${slug}` },
+          ]}
+        />
 
         {/* Hero */}
         <section className="bg-gradient-to-b from-slate-50 to-white pt-10 pb-8">
