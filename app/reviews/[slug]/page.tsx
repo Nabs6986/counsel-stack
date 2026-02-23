@@ -9,7 +9,7 @@ import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure"
 import { StarRating } from "@/components/ui/StarRating";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { FAQSchema } from "@/components/schema/FAQSchema";
-import { SoftwareApplicationSchema } from "@/components/schema/SoftwareApplicationSchema";
+import { ReviewSchema } from "@/components/schema/ReviewSchema";
 import { getTool, getAllToolSlugs } from "../_data/tools";
 
 interface Props {
@@ -62,13 +62,13 @@ export default async function ReviewPage({ params }: Props) {
 
   return (
     <>
-      <SoftwareApplicationSchema
-        name={tool.name}
-        description={tool.verdict}
-        rating={tool.overallRating}
-        ratingCount={1}
+      <ReviewSchema
+        name={`${tool.name} Review 2026`}
+        reviewBody={tool.verdict}
+        ratingValue={tool.overallRating}
+        softwareName={tool.name}
+        softwareUrl={pageUrl}
         price={tool.pricing[0].price}
-        url={pageUrl}
       />
       <FAQSchema
         faqs={tool.faqs.map((faq) => ({

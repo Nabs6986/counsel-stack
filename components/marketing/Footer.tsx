@@ -25,6 +25,8 @@ const footerLinks = {
   Company: [
     { name: "About Us", href: "/about" },
     { name: "Blog", href: "/blog" },
+    { name: "FAQ", href: "/faq" },
+    { name: "How We Review", href: "/how-we-review" },
     { name: "Affiliate Disclosure", href: "/affiliate-disclosure" },
     { name: "Contact", href: "/contact" },
   ],
