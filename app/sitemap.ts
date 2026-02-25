@@ -28,6 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/affiliate-disclosure`, priority: 0.6 },
     { url: `${baseUrl}/contact`, priority: 0.5 },
     { url: `${baseUrl}/waitlist`, priority: 0.7 },
+    { url: `${baseUrl}/guides`, priority: 0.85 },
+    { url: `${baseUrl}/guides/best-legal-practice-management-software-2026`, priority: 0.95 },
+    { url: `${baseUrl}/about-this-site`, priority: 0.6 },
   ].map((page) => ({
     url: page.url,
     lastModified: now,
