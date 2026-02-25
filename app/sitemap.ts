@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllToolSlugs } from "./reviews/_data/tools";
 import { getAllComparisonSlugs } from "./vs/_data/comparisons";
 import { getAllPostSlugs } from "./blog/_data/posts";
+import { getAllAudienceSlugs } from "./for/_data/audiences";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://counselstack.io";
@@ -28,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/affiliate-disclosure`, priority: 0.6 },
     { url: `${baseUrl}/contact`, priority: 0.5 },
     { url: `${baseUrl}/waitlist`, priority: 0.7 },
+    { url: `${baseUrl}/for`, priority: 0.85 },
   ].map((page) => ({
     url: page.url,
     lastModified: now,
@@ -56,5 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...reviewPages, ...comparisonPages, ...blogPages];
+  const audiencePages = getAllAudienceSlugs().map((slug) => ({
+    url: `${baseUrl}/for/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+  }));
+
+  return [...staticPages, ...reviewPages, ...comparisonPages, ...blogPages, ...audiencePages];
 }
