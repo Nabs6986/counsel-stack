@@ -1303,7 +1303,7 @@ The smartest approach for a budget-conscious solo attorney is to invest in one g
           "Filevine is the best Clio alternative for personal injury and litigation-focused firms. It was purpose-built for contingency fee practices and includes AI-powered medical record analysis, real-time deposition intelligence with live transcription, automated deadline calculation for any US jurisdiction, mass case tracking, and sophisticated intake workflows. While Clio serves general practice well, Filevine's specialization gives PI firms capabilities that generic platforms simply cannot match. Pricing is custom — contact Filevine directly for a quote based on your firm size and needs.",
       },
     ],
-    content: \`## The Quick Answer
+    content: `## The Quick Answer
 
 If you are evaluating Clio alternatives, here is where to start based on your firm's primary need:
 
@@ -1496,7 +1496,7 @@ Lawmatics is an additional cost on top of your PM software. But for firms with a
 
 **Choose Lawmatics if** you have active marketing programs, meaningful lead volume, and Clio Grow is not sophisticated enough for your intake needs.
 
-For more detailed guidance on evaluating legal software, see our comprehensive [guide to choosing legal practice management software](/blog/how-to-choose-legal-practice-management-software-2026). And if you are specifically comparing options for smaller firms, our [best legal software for small law firms](/best/small-law-firms) guide ranks the top platforms by firm size.\`,
+For more detailed guidance on evaluating legal software, see our comprehensive [guide to choosing legal practice management software](/blog/how-to-choose-legal-practice-management-software-2026). And if you are specifically comparing options for smaller firms, our [best legal software for small law firms](/best/small-law-firms) guide ranks the top platforms by firm size.`,
   },
 
   "how-to-switch-legal-practice-management-software": {
@@ -1551,7 +1551,7 @@ For more detailed guidance on evaluating legal software, see our comprehensive [
           "Yes, and we strongly recommend it. Running both platforms in parallel for 2-4 weeks is the safest migration strategy. Enter all new matters in the new platform while continuing to manage existing active matters in the old system until they reach a natural transition point (such as a billing cycle end). This parallel period lets you verify data accuracy, train staff on the new system under real conditions, and maintain uninterrupted client service. Most legal software subscriptions are month-to-month, so the cost of one extra month on your old platform is minimal compared to the risk of a rushed migration.",
       },
     ],
-    content: \`## The Bottom Line
+    content: `## The Bottom Line
 
 Switching legal practice management software does not have to mean losing data or disrupting your practice. **The key is a structured, phased approach**: export everything first, run both platforms in parallel for 2-4 weeks, and do not cancel your old subscription until you have verified that every piece of critical data — especially trust accounting — has transferred correctly. Most firms complete the full transition in 3-4 weeks with minimal disruption.
 
@@ -1758,7 +1758,7 @@ After canceling, keep your exported data archives for at least 7 years — this 
 
 If the migration feels overwhelming, you have options. Most platforms include implementation support — [MyCase](/reviews/mycase) and [PracticePanther](/reviews/practicepanther) include onboarding on mid-tier plans, and CosmoLex assigns a dedicated migration specialist. For more complex migrations, legal technology consultants specialize in this work and charge $150-300/hour for a few hours of guided setup. The ABA's Legal Technology Resource Center maintains a directory of consultants.
 
-For a comparison of platforms that includes migration support quality, see our [best legal practice management software](/best/legal-practice-management-software-2026) rankings.\`,
+For a comparison of platforms that includes migration support quality, see our [best legal practice management software](/best/legal-practice-management-software-2026) rankings.`,
   },
 
   "average-cost-legal-practice-management-software-2026": {
@@ -1812,7 +1812,7 @@ For a comparison of platforms that includes migration support quality, see our [
           "Most legal software platforms do raise prices periodically, though transparent vendors announce increases in advance. Based on historical pricing data, expect annual increases of 3-8% across the industry. Clio has raised prices multiple times over the past several years — its EasyStart plan was $39/month in 2022 and is $49/month in 2026. MyCase and PracticePanther have been more stable on pricing. To protect against price increases, some firms lock in multi-year annual contracts. Always ask vendors about their pricing history and any planned increases before committing.",
       },
     ],
-    content: \`## The Key Numbers
+    content: `## The Key Numbers
 
 Here is what legal practice management software actually costs in 2026, based on our analysis of the seven most widely used platforms:
 
@@ -2001,7 +2001,7 @@ The math on legal practice management software is overwhelmingly positive. Consi
 
 For a solo attorney paying $89/month for MyCase Pro, recovering just one additional billable hour per week at $200/hour generates $800/month in revenue — a 9x return on the software investment.
 
-Compare platforms side-by-side using our [comparison tools](/vs/clio-vs-mycase) to find the best value for your specific needs. And for firms focused primarily on budget, our [best free and budget options guide](/best/free-budget-options) ranks the most affordable platforms.\`,
+Compare platforms side-by-side using our [comparison tools](/vs/clio-vs-mycase) to find the best value for your specific needs. And for firms focused primarily on budget, our [best free and budget options guide](/best/free-budget-options) ranks the most affordable platforms.`,
   },
 
   "best-legal-software-remote-law-firms-2026": {
@@ -2055,7 +2055,7 @@ Compare platforms side-by-side using our [comparison tools](/vs/clio-vs-mycase) 
           "Yes, fully remote law firms can comply with bar ethical requirements in all US jurisdictions, though specific rules vary by state. The ABA issued Formal Opinion 498 in 2021 confirming that lawyers may practice virtually while meeting ethical obligations. Key compliance areas for remote firms include: maintaining client confidentiality through encrypted communications and secure document storage, ensuring competence with technology tools used in practice, proper trust accounting regardless of physical office location, and compliance with the jurisdiction's office address requirements. Most states now allow virtual office addresses or registered agent services to satisfy physical address requirements.",
       },
     ],
-    content: \`## Our Top Picks
+    content: `## Our Top Picks
 
 For remote and hybrid law firms in 2026, here are the best legal software platforms ranked by remote-readiness:
 
@@ -2250,7 +2250,7 @@ The ABA's Model Rules of Professional Conduct require competence with technology
 
 **Underinvesting in security.** The cost of a data breach far exceeds the cost of proper security tools. A $15/user/month investment in VPN and password management is trivial compared to the reputational and financial damage of a client data breach.
 
-For more guidance on selecting the right platform for your firm, explore our [comparison tools](/vs/clio-vs-mycase) and [detailed reviews](/reviews/clio).\`,
+For more guidance on selecting the right platform for your firm, explore our [comparison tools](/vs/clio-vs-mycase) and [detailed reviews](/reviews/clio).`,
   },
 
   "legal-technology-trends-2026": {
@@ -2301,7 +2301,7 @@ For more guidance on selecting the right platform for your firm, explore our [co
           "The three legal technology investments with the highest measurable ROI are: First, integrated practice management software — firms report capturing 15-25% more billable hours and reducing administrative time by 5-10 hours per week, which typically delivers a 5-10x return on the software subscription cost. Second, online payment portals — reducing average collection time from 60+ days to 15-30 days improves cash flow significantly and reduces write-offs. Third, automated time tracking (Smokeball's Autotime or similar) — capturing 30+ additional billable minutes per attorney per day translates to thousands of dollars per attorney per year at standard billing rates. These three investments address the most direct revenue and efficiency levers for any size firm.",
       },
     ],
-    content: \`## The Big Picture
+    content: `## The Big Picture
 
 Legal technology in 2026 is defined by one overarching trend: **AI is moving from novelty to embedded utility**. The experimental chatbot phase is over. AI capabilities are now built directly into the practice management platforms attorneys use daily — drafting documents, capturing time, summarizing cases, and qualifying leads without requiring attorneys to learn new tools or change their workflows.
 
@@ -2458,7 +2458,7 @@ Based on these trends, here are the three highest-impact actions for any law fir
 
 **3. Invest in your client portal.** Enable online payment, secure messaging, and document sharing. The firms winning new clients in 2026 are those delivering a modern digital experience — not the ones with the nicest office lobby.
 
-For detailed platform comparisons and reviews, explore our [reviews section](/reviews/clio) and [best-of guides](/best/legal-practice-management-software-2026). The legal technology market is moving fast — the firms that adapt methodically will outperform those that either ignore the shift or chase every shiny new tool.\`,
+For detailed platform comparisons and reviews, explore our [reviews section](/reviews/clio) and [best-of guides](/best/legal-practice-management-software-2026). The legal technology market is moving fast — the firms that adapt methodically will outperform those that either ignore the shift or chase every shiny new tool.`,
   },
 };
 
