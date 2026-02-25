@@ -1,0 +1,18 @@
+{
+  "siteName": "CounselStack",
+  "domain": "counselstack.io",
+  "category": "Legal Practice Management Software Reviews & Comparisons",
+  "focus": "Attorneys, law firms, and legal professionals evaluating practice management software",
+  "methodology": "Independent research, feature analysis, and user interviews",
+  "editorialPolicy": "Affiliate-supported. Editorial opinions are independent.",
+  "updateFrequency": "Monthly reviews, quarterly rankings",
+  "lastUpdated": "2026-02-25",
+  "topPicks": [
+    { "rank": 1, "name": "Clio", "bestFor": "Overall best — largest integration ecosystem", "priceFrom": "$49/user/mo" },
+    { "rank": 2, "name": "MyCase", "bestFor": "Best value for solo and small firms", "priceFrom": "$39/user/mo" },
+    { "rank": 3, "name": "PracticePanther", "bestFor": "Solo practitioners wanting all-in-one", "priceFrom": "$49/user/mo" }
+  ],
+  "contactPage": "/contact",
+  "aboutPage": "/about",
+  "guidesPage": "/guides"
+}
