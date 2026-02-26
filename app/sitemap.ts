@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, priority: 0.8 },
     { url: `${baseUrl}/about`, priority: 0.6 },
     { url: `${baseUrl}/faq`, priority: 0.7 },
+    { url: `${baseUrl}/answers`, priority: 0.75 },
     { url: `${baseUrl}/how-we-review`, priority: 0.6 },
     { url: `${baseUrl}/affiliate-disclosure`, priority: 0.6 },
     { url: `${baseUrl}/contact`, priority: 0.5 },
