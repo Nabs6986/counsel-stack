@@ -199,6 +199,16 @@ export default function HowWeReviewPage() {
             </div>
 
             <div>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">Who Reviews</h2>
+              <p className="text-slate-600 leading-relaxed">
+                Reviews are led by <strong>Sarah Chen, JD</strong>, our Legal Technology Editor. Sarah
+                brings a background in legal practice and legal technology consulting, and has
+                evaluated over 30 legal software platforms through hands-on testing. All reviews are
+                subject to editorial review for accuracy and consistency before publication.
+              </p>
+            </div>
+
+            <div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Corrections & Feedback</h2>
               <p className="text-slate-600 leading-relaxed">
                 If you spot an error in our pricing data, feature descriptions, or any other

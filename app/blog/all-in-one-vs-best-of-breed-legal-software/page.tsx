@@ -94,7 +94,7 @@ export default function BlogPost() {
       </ul>
 
       <p>
-        Compare that to <a href="/software/clio" className="text-blue-600 hover:underline">Clio Essentials</a> at $89/month or <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month—both of which include time tracking, scheduling, document management, payments, and client management in one package.
+        Compare that to <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio Essentials</a> at $89/month or <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month—both of which include time tracking, scheduling, document management, payments, and client management in one package.
       </p>
 
       <p>
@@ -121,17 +121,17 @@ export default function BlogPost() {
       </ul>
 
       <p>
-        If your practice area has unique workflow requirements, you might need a specialized tool. PI firms often use <a href="/software/filevine" className="text-blue-600 hover:underline">Filevine</a> or CloudLex specifically for medical record handling. Estate planners use WealthCounsel or Estateably for document assembly that <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> can't match.
+        If your practice area has unique workflow requirements, you might need a specialized tool. PI firms often use <a href="/reviews/filevine" className="text-blue-600 hover:underline">Filevine</a> or CloudLex specifically for medical record handling. Estate planners use WealthCounsel or Estateably for document assembly that <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> can't match.
       </p>
 
       <h3>Accounting Depth</h3>
 
       <p>
-        Most practice management platforms have basic trust accounting. <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the exception—it includes full general ledger accounting designed for law firms, eliminating the QuickBooks dependency.
+        Most practice management platforms have basic trust accounting. <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the exception—it includes full general ledger accounting designed for law firms, eliminating the QuickBooks dependency.
       </p>
 
       <p>
-        If you're currently using <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> or <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, you're probably also using QuickBooks or Xero for accounting. The integration works, mostly. But you're maintaining two systems, and the reconciliation isn't automatic.
+        If you're currently using <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> or <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, you're probably also using QuickBooks or Xero for accounting. The integration works, mostly. But you're maintaining two systems, and the reconciliation isn't automatic.
       </p>
 
       <p>
@@ -157,7 +157,7 @@ export default function BlogPost() {
       <h3>Clio: The Ecosystem Play</h3>
 
       <p>
-        <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> isn't just a practice management platform—it's an ecosystem. With 250+ integrations in the Clio App Directory, you can add specialized tools that plug directly into your Clio data.
+        <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> isn't just a practice management platform—it's an ecosystem. With 250+ integrations in the Clio App Directory, you can add specialized tools that plug directly into your Clio data.
       </p>
 
       <p>
@@ -175,7 +175,7 @@ export default function BlogPost() {
       <h3>CosmoLex: True All-in-One</h3>
 
       <p>
-        <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> takes all-in-one literally. Practice management, billing, trust accounting, and general ledger accounting in one platform. No QuickBooks needed.
+        <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> takes all-in-one literally. Practice management, billing, trust accounting, and general ledger accounting in one platform. No QuickBooks needed.
       </p>
 
       <p>
@@ -189,7 +189,7 @@ export default function BlogPost() {
       <h3>PracticePanther: Value All-in-One</h3>
 
       <p>
-        <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month gives you time tracking, billing, payments (PantherPayments), document management, and client portals. It's not as feature-deep as Clio, but it covers the essentials at a lower price.
+        <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month gives you time tracking, billing, payments (PantherPayments), document management, and client portals. It's not as feature-deep as Clio, but it covers the essentials at a lower price.
       </p>
 
       <p>
@@ -203,7 +203,7 @@ export default function BlogPost() {
       <h3>Smokeball: Automation-First</h3>
 
       <p>
-        <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> differentiates on automatic time tracking and document assembly. If your practice generates a lot of standard documents (real estate closings, estate planning documents), Smokeball's built-in automation can replace separate document automation tools.
+        <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> differentiates on automatic time tracking and document assembly. If your practice generates a lot of standard documents (real estate closings, estate planning documents), Smokeball's built-in automation can replace separate document automation tools.
       </p>
 
       <p>
@@ -271,7 +271,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        For more on migration, see our guide on <a href="/blog/switching-from-google-docs-to-practice-management" className="text-blue-600 hover:underline">switching from Google Docs</a> or check vendor-specific migration support—<a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> and <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> both offer migration assistance.
+        For more on migration, see our guide on <a href="/blog/switching-from-google-docs-to-practice-management" className="text-blue-600 hover:underline">switching from Google Docs</a> or check vendor-specific migration support—<a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> and <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> both offer migration assistance.
       </p>
 
       <h2>The Bottom Line</h2>

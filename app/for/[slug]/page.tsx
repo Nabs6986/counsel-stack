@@ -35,16 +35,6 @@ export default async function AudiencePage({ params }: Props) {
   const audience = getAudience(slug);
   if (!audience) notFound();
 
-  const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": audience.faqs.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
-    })),
-  };
-
   return (
     <>
       <BreadcrumbSchema
@@ -64,7 +54,6 @@ export default async function AudiencePage({ params }: Props) {
         }))}
       />
       <Navbar />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <main className="pt-16">
         {/* Hero */}
         <section className="bg-gradient-to-b from-brand-50 to-white pt-12 pb-8">

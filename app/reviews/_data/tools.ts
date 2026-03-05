@@ -143,7 +143,7 @@ export const tools: Record<string, ReviewTool> = {
       "Task automation and workflows",
     ],
     integrations: 250,
-    metaTitle: "Clio Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "Clio Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "In-depth Clio review for 2026. Real pricing ($49–$149/user/month), key features, pros, cons, and who it's best for. Updated with current information.",
     intro:
@@ -332,7 +332,7 @@ Clio earns its reputation as the industry standard. If you want the most feature
       "Financial reporting",
     ],
     integrations: 50,
-    metaTitle: "MyCase Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "MyCase Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "Honest MyCase review for 2026. Pricing starts at $39/user/month. See features, pros, cons, and how it compares to Clio and PracticePanther.",
     intro:
@@ -511,7 +511,7 @@ For small and solo law firms, MyCase is often the right answer. It's affordable,
       "LEDES/UTBMS billing for insurance defense",
     ],
     integrations: 40,
-    metaTitle: "PracticePanther Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "PracticePanther Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "Full PracticePanther review for 2026. Pricing from $49/user/month. See who it's best for, key features, and how it compares to Clio and MyCase.",
     intro:
@@ -692,7 +692,7 @@ PracticePanther is a strong choice for solo practitioners and small firms that v
       "Custom workflows (Prosper+)",
     ],
     integrations: 30,
-    metaTitle: "Smokeball Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "Smokeball Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "In-depth Smokeball review for 2026. Unique automatic time tracking, document automation, and practice area templates. See who it's best for.",
     intro:
@@ -838,7 +838,7 @@ Smokeball is the best legal practice management platform for document-intensive 
       "Task management and calendaring",
     ],
     integrations: 20,
-    metaTitle: "CosmoLex Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "CosmoLex Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "Full CosmoLex review 2026. The only legal PM software with built-in accounting. Pricing from $109/user/month. See if it's worth ditching QuickBooks.",
     intro:
@@ -1026,7 +1026,7 @@ CosmoLex is the right choice for law firms that want a single platform for pract
       "Clio, MyCase, Smokeball integrations",
     ],
     integrations: 30,
-    metaTitle: "Lawmatics Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "Lawmatics Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "In-depth Lawmatics review for 2026. See features, custom pricing, integrations with Clio, pros & cons. The best legal CRM for law firm intake automation.",
     intro:
@@ -1237,7 +1237,7 @@ Lawmatics is the best legal CRM available — full stop. If your law firm genera
       "Native and partner integrations",
     ],
     integrations: 60,
-    metaTitle: "Filevine Review 2026: Pricing, Features, Pros & Cons | CounselStack",
+    metaTitle: "Filevine Review 2026: Pricing, Features, Pros & Cons",
     metaDescription:
       "In-depth Filevine review for 2026. AI case management, LOIS AI suite, custom pricing, and who it's best for. For personal injury and litigation firms.",
     intro:

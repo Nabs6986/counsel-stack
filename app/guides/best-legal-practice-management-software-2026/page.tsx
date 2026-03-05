@@ -6,7 +6,7 @@ import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
+
 import { ItemListSchema } from "@/components/schema/ItemListSchema";
 
 const baseUrl = "https://counselstack.io";
@@ -254,7 +254,6 @@ export default function BestLegalPMGuidePage() {
 
   return (
     <>
-      <FAQSchema faqs={faqs} />
       <ItemListSchema
         name="Best Legal Practice Management Software 2026"
         url={`${baseUrl}/guides/best-legal-practice-management-software-2026`}

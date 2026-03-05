@@ -12,7 +12,7 @@ export const newPosts = {
     category: "guide",
     tags: ["billable hours", "time tracking", "solo attorney", "revenue", "billing efficiency"],
     readingTime: 9,
-    metaTitle: "How Solo Attorneys Lose 20% of Billable Hours (And How to Stop It) | CounselStack",
+    metaTitle: "How Solo Attorneys Lose 20% of Billable Hours (And How to Stop It)",
     metaDescription:
       "Solo attorneys lose $50,000-$80,000 annually in unbilled time. Learn exactly where billable hours disappear and the proven systems to capture them.",
     faqs: [
@@ -258,7 +258,7 @@ The $80,000 you're leaving on the table is already yours. Go collect it.`,
     category: "guide",
     tags: ["trust accounting", "IOLTA", "bar compliance", "law firm accounting", "reconciliation"],
     readingTime: 11,
-    metaTitle: "Trust Account Reconciliation Guide for Law Firms | Bar-Compliant | CounselStack",
+    metaTitle: "Trust Account Reconciliation Guide for Law Firms | Bar-Compliant",
     metaDescription:
       "Step-by-step guide to monthly trust account reconciliation for law firms. Stay bar-compliant, avoid IOLTA errors, and pass audits with confidence.",
     faqs: [

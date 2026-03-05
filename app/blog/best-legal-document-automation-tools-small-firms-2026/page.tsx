@@ -197,7 +197,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">Clio Draft — Best for Firms Already Using Clio</h3>
 
         <p>
-          Clio Draft is document automation built into <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> practice management software. It's not as powerful as HotDocs, but it's simple to use and integrates seamlessly with Clio's matter management.
+          Clio Draft is document automation built into <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> practice management software. It's not as powerful as HotDocs, but it's simple to use and integrates seamlessly with Clio's matter management.
         </p>
 
         <p>
@@ -231,7 +231,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">MyCase Document Templates — Best Budget Option</h3>
 
         <p>
-          <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> includes document automation in all pricing tiers. It's less sophisticated than HotDocs or Clio Draft, but it works for basic automation needs.
+          <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> includes document automation in all pricing tiers. It's less sophisticated than HotDocs or Clio Draft, but it works for basic automation needs.
         </p>
 
         <p>
@@ -265,7 +265,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">Smokeball Automated Forms — Best for Litigators</h3>
 
         <p>
-          <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> includes extensive form libraries for litigation, family law, and real estate. It's particularly strong for pleadings and court forms.
+          <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> includes extensive form libraries for litigation, family law, and real estate. It's particularly strong for pleadings and court forms.
         </p>
 
         <p>
@@ -557,7 +557,7 @@ export default function BlogPost() {
         </p>
 
         <p>
-          <strong>If you're a solo on a budget</strong>, start with <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> ($49/month) which includes basic automation. Build simple templates for your highest-volume documents. You can always upgrade later if you need more power.
+          <strong>If you're a solo on a budget</strong>, start with <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> ($49/month) which includes basic automation. Build simple templates for your highest-volume documents. You can always upgrade later if you need more power.
         </p>
 
         <p>

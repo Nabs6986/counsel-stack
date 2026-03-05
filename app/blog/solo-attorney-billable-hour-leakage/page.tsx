@@ -134,7 +134,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, and <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> all have mobile apps with this functionality. The difference is in how frictionless it feels. Clio's app is particularly smooth—the timer widget can sit on your phone's home screen, so you never need to open the full app.
+        <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, and <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> all have mobile apps with this functionality. The difference is in how frictionless it feels. Clio's app is particularly smooth—the timer widget can sit on your phone's home screen, so you never need to open the full app.
       </p>
 
       <h3>Calendar Integration</h3>
@@ -144,7 +144,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> goes furthest here—their automatic time capture feature runs in the background and tracks which documents, emails, and matters you're working on throughout the day. It's not perfect (you still need to review and approve entries), but it catches work you'd otherwise miss.
+        <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> goes furthest here—their automatic time capture feature runs in the background and tracks which documents, emails, and matters you're working on throughout the day. It's not perfect (you still need to review and approve entries), but it catches work you'd otherwise miss.
       </p>
 
       <h3>Email Time Tracking</h3>
@@ -172,7 +172,7 @@ export default function BlogPost() {
       <h3>Best for Automatic Time Capture: Smokeball</h3>
 
       <p>
-        <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> automatically tracks time spent on documents, emails, phone calls, and calendar events. You review a daily activity log and approve entries rather than creating them from memory. It's the closest to "set it and forget it" time tracking.
+        <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> automatically tracks time spent on documents, emails, phone calls, and calendar events. You review a daily activity log and approve entries rather than creating them from memory. It's the closest to "set it and forget it" time tracking.
       </p>
 
       <p>
@@ -182,13 +182,13 @@ export default function BlogPost() {
       <h3>Best Mobile Timer: Clio</h3>
 
       <p>
-        <a href="/software/clio" className="text-blue-600 hover:underline">Clio's</a> mobile app timer is fast and reliable. The home screen widget means you can start a timer without opening the app. For attorneys who take lots of calls and need to track on the go, Clio has the smoothest mobile experience.
+        <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio's</a> mobile app timer is fast and reliable. The home screen widget means you can start a timer without opening the app. For attorneys who take lots of calls and need to track on the go, Clio has the smoothest mobile experience.
       </p>
 
       <h3>Best Value: PracticePanther</h3>
 
       <p>
-        <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month includes solid time tracking features—multiple simultaneous timers, mobile app, and LEDES billing. If you want modern time tracking without Clio's $89-149/month price tag, PracticePanther delivers.
+        <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> at $59/month includes solid time tracking features—multiple simultaneous timers, mobile app, and LEDES billing. If you want modern time tracking without Clio's $89-149/month price tag, PracticePanther delivers.
       </p>
 
       <h2>The Behavioral Change Required</h2>
@@ -234,7 +234,7 @@ export default function BlogPost() {
       </p>
 
       <ul>
-        <li><strong>Software cost:</strong> $89/month (<a href="/software/clio" className="text-blue-600 hover:underline">Clio Essentials</a>) = $1,068/year</li>
+        <li><strong>Software cost:</strong> $89/month (<a href="/reviews/clio" className="text-blue-600 hover:underline">Clio Essentials</a>) = $1,068/year</li>
         <li><strong>If software helps you capture just 30 more minutes per day:</strong> 125 additional billable hours per year</li>
         <li><strong>Additional revenue:</strong> $31,250/year</li>
         <li><strong>ROI:</strong> 29:1</li>
@@ -272,7 +272,7 @@ export default function BlogPost() {
       </p>
 
       <ol>
-        <li>Sign up for free trials of <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>, or <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a></li>
+        <li>Sign up for free trials of <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>, or <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a></li>
         <li>Install the mobile app</li>
         <li>Track every billable activity for one full week</li>
         <li>Compare your captured hours to your usual weekly billing</li>

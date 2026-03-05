@@ -351,9 +351,9 @@ export default function BlogPost() {
         </ul>
 
         <p>
-          <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> and <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> consistently 
-          score highest on ease of use in attorney reviews. <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> has more features but a steeper 
-          learning curve. <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a>'s Autotime (automatic time capture) is brilliant for 
+          <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> and <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> consistently 
+          score highest on ease of use in attorney reviews. <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> has more features but a steeper 
+          learning curve. <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a>'s Autotime (automatic time capture) is brilliant for 
           attorneys who can't be bothered to start a timer.
         </p>
 

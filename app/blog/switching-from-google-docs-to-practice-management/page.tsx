@@ -158,7 +158,7 @@ export default function BlogPost() {
         </p>
 
         <p>
-          Platforms like <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, and <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> prevent 
+          Platforms like <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, and <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> prevent 
           you from disbursing more than a client's trust balance. They generate compliant reconciliation 
           reports. They maintain audit trails.
         </p>
@@ -223,19 +223,19 @@ export default function BlogPost() {
         </p>
 
         <p>
-          <strong><a href="/software/mycase" className="text-blue-600 hover:underline">MyCase Basic ($39/month)</a></strong> is the best 
+          <strong><a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase Basic ($39/month)</a></strong> is the best 
           value for budget-conscious solos. You get time tracking, billing, trust accounting, client portal, 
           and document management. No frills, no bloat, just the essentials done well.
         </p>
 
         <p>
-          <strong><a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther Solo ($49/month)</a></strong> adds 
+          <strong><a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther Solo ($49/month)</a></strong> adds 
           workflow automation and templates—useful if your practice area involves repeatable processes 
           (estate planning, immigration, real estate closings).
         </p>
 
         <p>
-          <strong><a href="/software/clio" className="text-blue-600 hover:underline">Clio Essentials ($89/month)</a></strong> is overkill for 
+          <strong><a href="/reviews/clio" className="text-blue-600 hover:underline">Clio Essentials ($89/month)</a></strong> is overkill for 
           most solos, but if you need specific integrations (250+ options), it's the safest choice for 
           future flexibility.
         </p>

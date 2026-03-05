@@ -32,7 +32,7 @@ export default function BlogPost() {
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
-          <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the best legal practice management software for IOLTA compliance. It's the only platform that combines built-in legal accounting with practice management, eliminating the QuickBooks sync that causes most trust accounting errors. For attorneys who lose sleep over trust account compliance, CosmoLex removes the manual reconciliation that gets other firms in trouble.
+          <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the best legal practice management software for IOLTA compliance. It's the only platform that combines built-in legal accounting with practice management, eliminating the QuickBooks sync that causes most trust accounting errors. For attorneys who lose sleep over trust account compliance, CosmoLex removes the manual reconciliation that gets other firms in trouble.
         </p>
 
         <p>
@@ -96,7 +96,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">CosmoLex: Built-In Accounting Eliminates Sync Errors</h3>
 
         <p>
-          <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> ($99/user/month) is the only major platform with full legal accounting built in. You don't need QuickBooks. You don't need a separate accounting system. Everything lives in one place.
+          <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> ($99/user/month) is the only major platform with full legal accounting built in. You don't need QuickBooks. You don't need a separate accounting system. Everything lives in one place.
         </p>
 
         <p>
@@ -126,7 +126,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">Clio: Good Trust Features, Requires QuickBooks Integration</h3>
 
         <p>
-          <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> ($49–$149/user/month depending on tier) handles trust accounting well but requires you to sync with QuickBooks or Xero for full accounting. The trust features work—they're just not self-contained.
+          <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> ($49–$149/user/month depending on tier) handles trust accounting well but requires you to sync with QuickBooks or Xero for full accounting. The trust features work—they're just not self-contained.
         </p>
 
         <p>
@@ -152,7 +152,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">MyCase: Simpler Trust Tracking, Less Depth</h3>
 
         <p>
-          <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> ($49–$79/user/month) offers trust account tracking but with less depth than CosmoLex or Clio. It's designed for simplicity, which is both its strength and weakness.
+          <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> ($49–$79/user/month) offers trust account tracking but with less depth than CosmoLex or Clio. It's designed for simplicity, which is both its strength and weakness.
         </p>
 
         <p>
@@ -177,7 +177,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">PracticePanther: Solid but Not Specialized</h3>
 
         <p>
-          <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> ($59–$89/user/month) handles trust accounting competently without being a standout. It's a "good enough" option for most practices.
+          <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> ($59–$89/user/month) handles trust accounting competently without being a standout. It's a "good enough" option for most practices.
         </p>
 
         <p>
@@ -199,7 +199,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">Smokeball: Automatic Time Tracking, Basic Trust</h3>
 
         <p>
-          <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> (~$89/user/month) markets its automatic time capture heavily. Trust accounting is present but not a differentiator.
+          <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> (~$89/user/month) markets its automatic time capture heavily. Trust accounting is present but not a differentiator.
         </p>
 
         <p>
@@ -325,15 +325,15 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">Bottom Line</h2>
 
         <p>
-          For solo practitioners and small firms where trust accounting is central to practice, <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the best choice. Its integrated accounting eliminates the sync errors that plague two-system setups, and its trust-specific features are the deepest in the market.
+          For solo practitioners and small firms where trust accounting is central to practice, <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> is the best choice. Its integrated accounting eliminates the sync errors that plague two-system setups, and its trust-specific features are the deepest in the market.
         </p>
 
         <p>
-          For firms with existing QuickBooks workflows and dedicated bookkeeping support, <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> handles trust accounting well enough while offering a better overall experience and broader integrations.
+          For firms with existing QuickBooks workflows and dedicated bookkeeping support, <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> handles trust accounting well enough while offering a better overall experience and broader integrations.
         </p>
 
         <p>
-          For practices with minimal trust activity, <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> and <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> are sufficient—but don't choose them specifically for trust features.
+          For practices with minimal trust activity, <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> and <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> are sufficient—but don't choose them specifically for trust features.
         </p>
 
         <p>

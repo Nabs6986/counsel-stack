@@ -54,35 +54,35 @@ export default function BlogPost() {
             </thead>
             <tbody>
               <tr className="border-b">
-                <td className="px-4 py-3 font-medium"><a href="/software/clio" className="text-blue-600 hover:underline">Clio</a></td>
+                <td className="px-4 py-3 font-medium"><a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a></td>
                 <td className="px-4 py-3">$49/user/mo (EasyStart)</td>
                 <td className="px-4 py-3">$89/user/mo (Essentials)</td>
                 <td className="px-4 py-3">$149/user/mo (Complete)</td>
                 <td className="px-4 py-3">~15% off annual</td>
               </tr>
               <tr className="border-b bg-gray-50">
-                <td className="px-4 py-3 font-medium"><a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a></td>
+                <td className="px-4 py-3 font-medium"><a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a></td>
                 <td className="px-4 py-3">$49/user/mo (Basic)</td>
                 <td className="px-4 py-3">$69/user/mo (Pro)</td>
                 <td className="px-4 py-3">$89/user/mo (Advanced)</td>
                 <td className="px-4 py-3">~17% off annual</td>
               </tr>
               <tr className="border-b">
-                <td className="px-4 py-3 font-medium"><a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a></td>
+                <td className="px-4 py-3 font-medium"><a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a></td>
                 <td className="px-4 py-3">$59/user/mo (Solo)</td>
                 <td className="px-4 py-3">$79/user/mo (Essential)</td>
                 <td className="px-4 py-3">$99/user/mo (Business)</td>
                 <td className="px-4 py-3">~15% off annual</td>
               </tr>
               <tr className="border-b bg-gray-50">
-                <td className="px-4 py-3 font-medium"><a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a></td>
+                <td className="px-4 py-3 font-medium"><a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a></td>
                 <td className="px-4 py-3">$99/user/mo (all-in-one)</td>
                 <td className="px-4 py-3">—</td>
                 <td className="px-4 py-3">—</td>
                 <td className="px-4 py-3">~20% off annual</td>
               </tr>
               <tr className="border-b">
-                <td className="px-4 py-3 font-medium"><a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a></td>
+                <td className="px-4 py-3 font-medium"><a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a></td>
                 <td className="px-4 py-3">$89/user/mo (Bill)</td>
                 <td className="px-4 py-3">$139/user/mo (Boost)</td>
                 <td className="px-4 py-3">$189/user/mo (Grow)</td>
@@ -99,7 +99,7 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">Clio Pricing Breakdown</h2>
 
         <p>
-          <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> offers three tiers with significant feature differences between them. The entry tier is more limited than competitors—many firms find they need Essentials or Complete to get the features they expected.
+          <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> offers three tiers with significant feature differences between them. The entry tier is more limited than competitors—many firms find they need Essentials or Complete to get the features they expected.
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">Clio EasyStart — $49/user/month</h3>
@@ -171,7 +171,7 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">MyCase Pricing Breakdown</h2>
 
         <p>
-          <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> is positioned as an easier, more affordable alternative to Clio. Its pricing reflects this—lower entry points with fewer features at each tier.
+          <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> is positioned as an easier, more affordable alternative to Clio. Its pricing reflects this—lower entry points with fewer features at each tier.
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">MyCase Basic — $49/user/month</h3>
@@ -203,7 +203,7 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">PracticePanther Pricing Breakdown</h2>
 
         <p>
-          <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> occupies the middle ground—more features than MyCase at the entry tier, less complexity than Clio.
+          <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> occupies the middle ground—more features than MyCase at the entry tier, less complexity than Clio.
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">PracticePanther Solo — $59/user/month</h3>
@@ -243,7 +243,7 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">CosmoLex Pricing Breakdown</h2>
 
         <p>
-          <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> takes a different approach: one tier that includes everything, including accounting. At $99/user/month, it looks expensive compared to MyCase Basic ($49)—but it eliminates the need for QuickBooks ($30-$60/month) and potentially a bookkeeper.
+          <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> takes a different approach: one tier that includes everything, including accounting. At $99/user/month, it looks expensive compared to MyCase Basic ($49)—but it eliminates the need for QuickBooks ($30-$60/month) and potentially a bookkeeper.
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">CosmoLex Standard — $99/user/month</h3>
@@ -276,7 +276,7 @@ export default function BlogPost() {
         <h2 className="text-2xl font-bold mt-10 mb-4">Smokeball Pricing Breakdown</h2>
 
         <p>
-          <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> is the most expensive option, but its automatic time capture (Autotime) can pay for itself if it helps you bill more accurately.
+          <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> is the most expensive option, but its automatic time capture (Autotime) can pay for itself if it helps you bill more accurately.
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">Smokeball Bill — $89/user/month</h3>
@@ -436,7 +436,7 @@ export default function BlogPost() {
         </p>
 
         <p>
-          If you need built-in accounting and trust accounting is central to your practice, <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> at $99/user/month eliminates the need for separate accounting software and potentially saves you bookkeeping fees.
+          If you need built-in accounting and trust accounting is central to your practice, <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> at $99/user/month eliminates the need for separate accounting software and potentially saves you bookkeeping fees.
         </p>
 
         <p>

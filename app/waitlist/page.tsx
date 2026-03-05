@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Early Access Waitlist",
   description:
     "Join the waitlist for simpler, more affordable legal practice management software. Built for solo attorneys and small firms.",
+  alternates: { canonical: "https://counselstack.io/waitlist" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Get Early Access",

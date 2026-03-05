@@ -62,6 +62,12 @@ Reviews are based on hands-on testing via free trials, verified vendor pricing, 
 
 Reviews and pricing data are updated quarterly. Blog content is published weekly.
 
+## Machine-Readable API Endpoints
+
+- https://counselstack.io/api/software — JSON data for all reviewed software (name, rating, pricing, features)
+- https://counselstack.io/api/faq — JSON array of frequently asked questions and answers
+- https://counselstack.io/api/stats — JSON site statistics (review count, comparison count, last updated)
+
 ## Contact
 
 - Website: https://counselstack.io

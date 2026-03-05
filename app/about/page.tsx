@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "About CounselStack — Our Mission and Editorial Standards",
   description:
     "CounselStack is an independent legal technology review site. Learn about our editorial standards, affiliate disclosure, and how we evaluate software.",
+  alternates: { canonical: "https://counselstack.io/about" },
 };
 
 export default function AboutPage() {
@@ -115,15 +116,16 @@ export default function AboutPage() {
             <div>
               <h2 className="text-2xl font-bold text-slate-900 mb-4">How We Evaluate Software</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Our reviews use a consistent scoring framework across five dimensions, each weighted by importance to the typical law firm:
+                Our reviews use a consistent scoring framework across six dimensions, each weighted by importance to the typical law firm:
               </p>
               <div className="space-y-4">
                 {[
-                  { dimension: "Features (30%)", desc: "Breadth of functionality, key differentiators, and feature availability at each plan tier." },
-                  { dimension: "Ease of Use (25%)", desc: "Learning curve, interface quality, and how quickly new users reach productivity." },
-                  { dimension: "Value for Money (20%)", desc: "Features delivered relative to pricing, including hidden costs and total cost of ownership." },
-                  { dimension: "Customer Support (15%)", desc: "Support availability, response times, and quality of onboarding resources." },
-                  { dimension: "Mobile App (10%)", desc: "Quality and completeness of iOS and Android applications." },
+                  { dimension: "Ease of Use (20%)", desc: "Interface design, learning curve, navigation clarity, and how quickly a new user reaches productivity." },
+                  { dimension: "Case Management & Billing (20%)", desc: "Matter management, time tracking accuracy, invoice generation, payment processing, and billing workflow completeness." },
+                  { dimension: "Trust Accounting & Compliance (20%)", desc: "IOLTA compliance, three-way reconciliation, trust ledger reporting, and safeguards against compliance violations." },
+                  { dimension: "Document Management & Integrations (15%)", desc: "Document storage, version control, template automation, and breadth of third-party integrations." },
+                  { dimension: "Support & Reliability (15%)", desc: "Support availability, response times, onboarding quality, uptime reliability, and mobile app quality." },
+                  { dimension: "Value for Money (10%)", desc: "Features delivered relative to total cost of ownership, including hidden costs and comparison to competitors." },
                 ].map((item) => (
                   <div key={item.dimension} className="flex gap-4 items-start">
                     <div className="w-2 h-2 rounded-full bg-brand-500 mt-2 flex-shrink-0" />
@@ -133,6 +135,20 @@ export default function AboutPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Our Team */}
+            <div>
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">Our Team</h2>
+              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 className="font-semibold text-slate-900 mb-1">Sarah Chen, JD</h3>
+                <p className="text-sm text-brand-600 mb-3">Legal Technology Editor</p>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Sarah brings a background in legal practice and legal technology consulting to CounselStack.
+                  She has evaluated over 30 legal software platforms through hands-on testing and leads our editorial
+                  review process, ensuring every review meets our standards for accuracy, independence, and depth.
+                </p>
               </div>
             </div>
 

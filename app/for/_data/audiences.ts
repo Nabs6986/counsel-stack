@@ -86,7 +86,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Can I switch legal software later without losing data?", answer: "Yes. All major platforms offer data migration assistance. PracticePanther includes free data migration on their Business plan. Clio and MyCase also provide migration tools and support." },
       { question: "Is cloud-based legal software secure enough for client data?", answer: "Yes. Clio, MyCase, and PracticePanther all use AES-256 encryption, SOC 2 compliance, and role-based access controls. Cloud storage is generally more secure than local hard drives for solo attorneys." },
     ],
-    metaTitle: "Best Legal Software for Solo Attorneys (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Solo Attorneys (2026)",
     metaDescription: "Compare the best legal practice management software for solo attorneys in 2026. MyCase, PracticePanther, and Clio ranked by price, features, and ease of use.",
   },
 
@@ -152,7 +152,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Can we migrate from our current software without downtime?", answer: "Yes. All major platforms offer migration support. PracticePanther includes free data migration. Clio and MyCase provide migration tools and dedicated support. Typical migration takes 1-2 weeks with parallel running." },
       { question: "What is the best legal software for a firm that handles multiple practice areas?", answer: "Clio is the strongest choice for multi-practice firms due to its custom matter types, 250+ integrations, and flexible workflow templates. You can configure different workflows for litigation, transactional, and family law matters." },
     ],
-    metaTitle: "Best Legal Software for Small Law Firms (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Small Law Firms (2026)",
     metaDescription: "Best legal practice management software for small law firms (2-25 attorneys) in 2026. Compare Clio, MyCase, and PracticePanther for pricing, features, and scalability.",
   },
 
@@ -217,7 +217,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Can legal PM software integrate with our existing accounting system?", answer: "Clio integrates with QuickBooks and Xero. CosmoLex eliminates the need for separate accounting entirely. Smokeball also connects with QuickBooks. For mid-size firms, CosmoLex's built-in accounting eliminates the sync issues that plague QuickBooks integrations at scale." },
       { question: "What security certifications should we look for?", answer: "Look for SOC 2 Type II compliance, AES-256 encryption, and SSO support. Clio, MyCase, and CosmoLex all meet these requirements. Additionally, verify that the platform supports role-based access controls and maintains audit trails for compliance reporting." },
     ],
-    metaTitle: "Best Legal Software for Mid-Size Firms (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Mid-Size Firms (2026)",
     metaDescription: "Best legal practice management software for mid-size law firms (25-100+ attorneys) in 2026. Compare Clio, Smokeball, and CosmoLex for enterprise features, integrations, and pricing.",
   },
 
@@ -282,7 +282,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Can legal software track child support calculations?", answer: "Most legal PM software doesn't include built-in child support calculators, but you can create custom fields and templates for support calculations. Smokeball's document automation can auto-fill financial data into child support worksheets from matter records." },
       { question: "Is there legal software specifically designed for family law?", answer: "No major standalone family law software exists. General practice management platforms like Smokeball, Clio, and MyCase are the best options, configured with family law document templates, custom matter types, and relevant workflows." },
     ],
-    metaTitle: "Best Legal Software for Family Law (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Family Law (2026)",
     metaDescription: "Best legal practice management software for family law attorneys in 2026. Compare Smokeball, MyCase, and Clio for document automation, client communication, and case management.",
   },
 
@@ -347,7 +347,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Can legal software help with medical record requests?", answer: "Yes. Smokeball includes medical record request templates that auto-fill from case data. Clio integrates with third-party medical record retrieval services through its 250+ integration ecosystem. Both approaches save hours per case on medical documentation." },
       { question: "What features reduce client complaints in PI cases?", answer: "Client portals (all three platforms), two-way texting (MyCase Pro, PracticePanther Business), and automated case status updates. MyCase's unlimited texting is especially effective -- plaintiffs can text their attorney instead of calling and waiting on hold." },
     ],
-    metaTitle: "Best Legal Software for Personal Injury (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Personal Injury (2026)",
     metaDescription: "Best legal practice management software for personal injury law firms in 2026. Compare Smokeball, Clio, and MyCase for PI case management, demand letters, and settlement tracking.",
   },
 
@@ -412,7 +412,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "How does legal software help with title searches?", answer: "Legal PM software organizes title search documents within the matter file, tracks title search deadlines, and stores title commitments with version history. Clio integrates with title company systems through its 250+ integration ecosystem." },
       { question: "Is there software specifically for real estate law firms?", answer: "No major standalone real estate law software exists for general practice management. Smokeball, CosmoLex, and Clio are the best general platforms with real estate-specific document templates and escrow accounting capabilities." },
     ],
-    metaTitle: "Best Legal Software for Real Estate Attorneys (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Real Estate Attorneys (2026)",
     metaDescription: "Best legal practice management software for real estate attorneys in 2026. Compare Smokeball, CosmoLex, and Clio for closing management, document automation, and escrow accounting.",
   },
 
@@ -477,7 +477,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Do I need immigration-specific software or general legal software?", answer: "If 50%+ of your caseload is immigration, Docketwise will save you significant time with form auto-fill and USCIS tracking. If immigration is a secondary practice area, Clio's general platform with custom workflows is more cost-effective." },
       { question: "Can Docketwise and Clio work together?", answer: "Yes. Clio's 250+ integrations include Docketwise. Many immigration firms use Docketwise for immigration-specific workflows (form filling, USCIS tracking) alongside Clio for general practice management (billing, client portal, time tracking)." },
     ],
-    metaTitle: "Best Legal Software for Immigration Attorneys (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Immigration Attorneys (2026)",
     metaDescription: "Best legal software for immigration lawyers in 2026. Compare Docketwise, Clio, and INSZoom for USCIS form auto-fill, case tracking, and immigration case management.",
   },
 
@@ -542,7 +542,7 @@ export const audiences: Record<string, AudiencePage> = {
       { question: "Is there legal software specifically for public defenders?", answer: "No major standalone public defender software exists for case management. MyCase Basic at $39/user/month is the most affordable option for public defenders. Some public defender offices use Clio with custom configurations for high-volume caseload management." },
       { question: "Can family members access case information through the software?", answer: "Yes. MyCase and Clio both offer client portals where you can grant access to family members. This is critical in criminal defense where defendants may be incarcerated and family members need case status updates." },
     ],
-    metaTitle: "Best Legal Software for Criminal Defense (2026) | CounselStack",
+    metaTitle: "Best Legal Software for Criminal Defense (2026)",
     metaDescription: "Best legal practice management software for criminal defense attorneys in 2026. Compare MyCase, PracticePanther, and Clio for case management, client communication, and billing.",
   },
 };

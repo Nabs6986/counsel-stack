@@ -291,25 +291,25 @@ export default function BlogPost() {
       <h3>Clio</h3>
 
       <p>
-        <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> has a dedicated migration team and supports imports from most major platforms. Their process typically takes 2-4 weeks for small firms. They do offer test migrations. Trust accounting migration is handled carefully, with balance verification before go-live.
+        <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> has a dedicated migration team and supports imports from most major platforms. Their process typically takes 2-4 weeks for small firms. They do offer test migrations. Trust accounting migration is handled carefully, with balance verification before go-live.
       </p>
 
       <h3>MyCase</h3>
 
       <p>
-        <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> migration has been inconsistent based on user reports. Some firms report smooth transitions; others describe significant delays and data issues. If you're considering MyCase, demand references from firms that migrated from your specific platform and verify trust accounting migration capabilities carefully.
+        <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> migration has been inconsistent based on user reports. Some firms report smooth transitions; others describe significant delays and data issues. If you're considering MyCase, demand references from firms that migrated from your specific platform and verify trust accounting migration capabilities carefully.
       </p>
 
       <h3>PracticePanther</h3>
 
       <p>
-        <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> includes free migration assistance. Their team handles the import, and they support most common export formats. Timeline is typically 2-3 weeks for small firms.
+        <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> includes free migration assistance. Their team handles the import, and they support most common export formats. Timeline is typically 2-3 weeks for small firms.
       </p>
 
       <h3>Smokeball</h3>
 
       <p>
-        <a href="/software/smokeball" className="text-blue-600 hover:underline">Smokeball</a> migration includes white-glove onboarding with a dedicated implementation manager. Expect 3-5 weeks for small firms. Their accounting migration (CosmoLex integration) is handled as part of the process.
+        <a href="/reviews/smokeball" className="text-blue-600 hover:underline">Smokeball</a> migration includes white-glove onboarding with a dedicated implementation manager. Expect 3-5 weeks for small firms. Their accounting migration (CosmoLex integration) is handled as part of the process.
       </p>
 
       <h2>The Contract Should Protect You</h2>

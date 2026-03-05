@@ -6,7 +6,6 @@ import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { ItemListSchema } from "@/components/schema/ItemListSchema";
 
 const baseUrl = "https://counselstack.io";
@@ -90,12 +89,6 @@ export default function BestImmigrationLawPage() {
 
   return (
     <>
-      <FAQSchema
-        faqs={faqs.map((faq) => ({
-          question: faq.q,
-          answer: faq.a,
-        }))}
-      />
       <ItemListSchema
         name="Best Legal Software for Immigration Law"
         url={`${baseUrl}/best/immigration-law`}

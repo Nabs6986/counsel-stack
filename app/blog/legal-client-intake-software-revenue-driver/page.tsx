@@ -187,7 +187,7 @@ export default function BlogPost() {
       </p>
 
       <p>
-        <a href="/software/clio" className="text-blue-600 hover:underline">Clio</a> integrates with DocuSign and HelloSign. <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> has built-in e-signatures. <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> includes e-signatures in higher tiers.
+        <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a> integrates with DocuSign and HelloSign. <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> has built-in e-signatures. <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> includes e-signatures in higher tiers.
       </p>
 
       <h3>Payment Collection at Intake</h3>
@@ -286,7 +286,7 @@ export default function BlogPost() {
       <h3>Clio Grow</h3>
 
       <p>
-        Clio's intake solution is called Clio Grow. It's a separate product that integrates with <a href="/software/clio" className="text-blue-600 hover:underline">Clio Manage</a> (the practice management side).
+        Clio's intake solution is called Clio Grow. It's a separate product that integrates with <a href="/reviews/clio" className="text-blue-600 hover:underline">Clio Manage</a> (the practice management side).
       </p>
 
       <p>
@@ -322,7 +322,7 @@ export default function BlogPost() {
       <h3>PracticePanther</h3>
 
       <p>
-        <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> includes intake features in its core product: web forms, e-signatures, and payment processing.
+        <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a> includes intake features in its core product: web forms, e-signatures, and payment processing.
       </p>
 
       <p>
@@ -340,7 +340,7 @@ export default function BlogPost() {
       <h3>MyCase</h3>
 
       <p>
-        <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> includes intake management with web forms, document collection, and e-signatures (at higher tiers).
+        <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> includes intake management with web forms, document collection, and e-signatures (at higher tiers).
       </p>
 
       <p>

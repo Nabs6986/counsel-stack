@@ -54,7 +54,7 @@ export default function BlogPost() {
         </ul>
 
         <p>
-          General legal software (<a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>) can manage PI cases with custom fields and templates. PI-specific platforms (CASEpeer, Filevine, Litify) have these features baked in, reducing setup time and administrative burden.
+          General legal software (<a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>) can manage PI cases with custom fields and templates. PI-specific platforms (CASEpeer, Filevine, Litify) have these features baked in, reducing setup time and administrative burden.
         </p>
 
         <h2 className="text-2xl font-bold mt-10 mb-4">Core Features for PI Case Management</h2>
@@ -219,7 +219,7 @@ export default function BlogPost() {
 
         <ul className="list-disc pl-6 space-y-2 mb-6">
           <li><strong>QuickBooks:</strong> Most common accounting platform for law firms</li>
-          <li><strong>Built-in trust accounting:</strong> Platforms like <a href="/software/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> include trust accounting, eliminating the need for separate software</li>
+          <li><strong>Built-in trust accounting:</strong> Platforms like <a href="/reviews/cosmolex" className="text-blue-600 hover:underline">CosmoLex</a> include trust accounting, eliminating the need for separate software</li>
           <li><strong>Settlement disbursement worksheets:</strong> Calculate exactly how much each party receives at settlement</li>
         </ul>
 
@@ -264,7 +264,7 @@ export default function BlogPost() {
         <h3 className="text-xl font-semibold mt-8 mb-3">When to Choose General Legal Software</h3>
 
         <p>
-          Go with general legal software (<a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>) if:
+          Go with general legal software (<a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>) if:
         </p>
 
         <ul className="list-disc pl-6 space-y-2 mb-6">
@@ -400,7 +400,7 @@ export default function BlogPost() {
         </p>
 
         <ul className="list-disc pl-6 space-y-2 mb-6">
-          <li><strong>General legal software (configured for PI):</strong> $49-$99/user/month (<a href="/software/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>)</li>
+          <li><strong>General legal software (configured for PI):</strong> $49-$99/user/month (<a href="/reviews/clio" className="text-blue-600 hover:underline">Clio</a>, <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a>, <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>)</li>
           <li><strong>PI-specific platforms:</strong> $100-$200/user/month (CASEpeer, Filevine, Litify)</li>
           <li><strong>Add-ons:</strong> Payment processing (2.9-3% per transaction), e-signatures ($10-$20/month), text messaging ($20-$50/month), medical record retrieval (varies by provider)</li>
         </ul>
@@ -430,7 +430,7 @@ export default function BlogPost() {
         </p>
 
         <p>
-          <strong>Solo or small firm (1-5 attorneys) handling straightforward PI:</strong> Start with general legal software like <a href="/software/mycase" className="text-blue-600 hover:underline">MyCase</a> or <a href="/software/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>. Configure it for PI workflows using custom fields and templates. You'll save money and get a platform that can handle other practice areas if your firm diversifies.
+          <strong>Solo or small firm (1-5 attorneys) handling straightforward PI:</strong> Start with general legal software like <a href="/reviews/mycase" className="text-blue-600 hover:underline">MyCase</a> or <a href="/reviews/practicepanther" className="text-blue-600 hover:underline">PracticePanther</a>. Configure it for PI workflows using custom fields and templates. You'll save money and get a platform that can handle other practice areas if your firm diversifies.
         </p>
 
         <p>
