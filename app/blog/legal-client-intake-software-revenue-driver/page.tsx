@@ -1,15 +1,35 @@
 import type { Metadata } from 'next'
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: 'Legal Client Intake Software: The Hidden Revenue Driver for Small Firms | CounselStack',
+  title: 'Legal Client Intake Software: The Hidden Revenue Driver for Small Firms',
   description: 'Law firms lose 30-40% of leads to slow intake processes. See how client intake software captures more clients without hiring more staff.',
+  alternates: { canonical: "https://counselstack.io/blog/legal-client-intake-software-revenue-driver" },
 }
 
 export default function BlogPost() {
   return (
-    <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
-      <h1>Legal Client Intake Software: The Hidden Revenue Driver for Small Firms</h1>
-      <p className="text-gray-600 mb-8">February 24, 2026</p>
+    <>
+      <ArticleSchema
+        title="Legal Client Intake Software: The Hidden Revenue Driver for Small Firms"
+        description="Law firms lose 30-40% of leads to slow intake processes. See how client intake software captures more clients without hiring more staff."
+        author="CounselStack Editorial"
+        datePublished="2026-02-24"
+        url="https://counselstack.io/blog/legal-client-intake-software-revenue-driver"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Legal Client Intake Software", url: "https://counselstack.io/blog/legal-client-intake-software-revenue-driver" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
+          <h1>Legal Client Intake Software: The Hidden Revenue Driver for Small Firms</h1>
+          <p className="text-gray-600 mb-8">February 24, 2026</p>
 
       <p className="text-xl text-gray-700 mb-8">
         Small law firms lose 30-40% of potential clients between first contact and signed engagement letter. Not because the leads were bad—because the intake process was slow, fragmented, or never completed. Client intake software fixes this by automating the gap between "I need a lawyer" and "Here's your signed retainer agreement." For firms billing $200-400/hour, converting even two additional clients per month adds $10,000-50,000 annually. That's not a software expense—it's revenue recovery.
@@ -478,6 +498,9 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   )
 }

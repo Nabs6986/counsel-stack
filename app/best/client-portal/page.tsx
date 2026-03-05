@@ -12,7 +12,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Software with Client Portal 2026 | CounselStack",
+  title: "Best Legal Software with Client Portal 2026",
   description:
     "Best legal practice management software with client portals in 2026. Compare Clio, MyCase, and PracticePanther for secure client communication, document sharing, and billing transparency.",
   alternates: {

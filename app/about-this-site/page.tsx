@@ -7,7 +7,7 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "About This Site | CounselStack",
+  title: "About This Site",
   description:
     "Learn about CounselStack — how we review legal practice management software, our editorial methodology, and our commitment to independent, honest recommendations.",
   alternates: {

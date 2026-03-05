@@ -2,63 +2,87 @@ import { MetadataRoute } from "next";
 import { getAllToolSlugs } from "./reviews/_data/tools";
 import { getAllComparisonSlugs } from "./vs/_data/comparisons";
 import { getAllPostSlugs } from "./blog/_data/posts";
+import { getAllAudienceSlugs } from "./for/_data/audiences";
+
+const standaloneBlogSlugs = [
+  "legal-practice-management-software-pricing",
+  "best-legal-document-automation-tools-small-firms-2026",
+  "how-to-choose-case-management-software-personal-injury",
+  "how-to-evaluate-legal-software-data-migration",
+  "switching-from-google-docs-to-practice-management",
+  "getting-attorneys-to-use-practice-management-software",
+  "legal-client-intake-software-revenue-driver",
+  "legal-software-iolta-trust-accounting",
+  "solo-attorney-billable-hour-leakage",
+  "all-in-one-vs-best-of-breed-legal-software",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://counselstack.io";
   const now = new Date().toISOString();
 
   const staticPages = [
-    { url: baseUrl, priority: 1.0 },
-    { url: `${baseUrl}/reviews`, priority: 0.9 },
-    { url: `${baseUrl}/compare`, priority: 0.9 },
-    { url: `${baseUrl}/best`, priority: 0.85 },
-    { url: `${baseUrl}/pricing`, priority: 0.9 },
-    { url: `${baseUrl}/best/legal-practice-management-software-2026`, priority: 0.95 },
-    { url: `${baseUrl}/best/solo-practitioners`, priority: 0.85 },
-    { url: `${baseUrl}/best/small-law-firms`, priority: 0.85 },
-    { url: `${baseUrl}/best/free-budget-options`, priority: 0.8 },
-    { url: `${baseUrl}/best/immigration-law`, priority: 0.85 },
-    { url: `${baseUrl}/best/personal-injury`, priority: 0.85 },
-    { url: `${baseUrl}/best/document-management`, priority: 0.85 },
-    { url: `${baseUrl}/best/client-portal`, priority: 0.85 },
-    { url: `${baseUrl}/blog`, priority: 0.8 },
-    { url: `${baseUrl}/about`, priority: 0.6 },
-    { url: `${baseUrl}/faq`, priority: 0.7 },
-    { url: `${baseUrl}/answers`, priority: 0.75 },
-    { url: `${baseUrl}/how-we-review`, priority: 0.6 },
-    { url: `${baseUrl}/affiliate-disclosure`, priority: 0.6 },
-    { url: `${baseUrl}/contact`, priority: 0.5 },
-    { url: `${baseUrl}/waitlist`, priority: 0.7 },
-    { url: `${baseUrl}/guides`, priority: 0.85 },
-    { url: `${baseUrl}/guides/best-legal-practice-management-software-2026`, priority: 0.95 },
-    { url: `${baseUrl}/about-this-site`, priority: 0.6 },
-  ].map((page) => ({
-    url: page.url,
+    `${baseUrl}`,
+    `${baseUrl}/reviews`,
+    `${baseUrl}/compare`,
+    `${baseUrl}/best`,
+    `${baseUrl}/pricing`,
+    `${baseUrl}/best/legal-practice-management-software-2026`,
+    `${baseUrl}/best/solo-practitioners`,
+    `${baseUrl}/best/small-law-firms`,
+    `${baseUrl}/best/free-budget-options`,
+    `${baseUrl}/best/immigration-law`,
+    `${baseUrl}/best/personal-injury`,
+    `${baseUrl}/best/document-management`,
+    `${baseUrl}/best/client-portal`,
+    `${baseUrl}/blog`,
+    `${baseUrl}/about`,
+    `${baseUrl}/faq`,
+    `${baseUrl}/answers`,
+    `${baseUrl}/how-we-review`,
+    `${baseUrl}/affiliate-disclosure`,
+    `${baseUrl}/contact`,
+    `${baseUrl}/waitlist`,
+    `${baseUrl}/guides`,
+    `${baseUrl}/guides/best-legal-practice-management-software-2026`,
+    `${baseUrl}/about-this-site`,
+    `${baseUrl}/for`,
+  ].map((url) => ({
+    url,
     lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: page.priority,
+  }));
+
+  const audiencePages = getAllAudienceSlugs().map((slug) => ({
+    url: `${baseUrl}/for/${slug}`,
+    lastModified: now,
   }));
 
   const reviewPages = getAllToolSlugs().map((slug) => ({
     url: `${baseUrl}/reviews/${slug}`,
     lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.9,
   }));
 
   const comparisonPages = getAllComparisonSlugs().map((slug) => ({
     url: `${baseUrl}/compare/${slug}`,
     lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.85,
   }));
 
   const blogPages = getAllPostSlugs().map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
   }));
 
-  return [...staticPages, ...reviewPages, ...comparisonPages, ...blogPages];
+  const standaloneBlogPages = standaloneBlogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: now,
+  }));
+
+  return [
+    ...staticPages,
+    ...audiencePages,
+    ...reviewPages,
+    ...comparisonPages,
+    ...blogPages,
+    ...standaloneBlogPages,
+  ];
 }

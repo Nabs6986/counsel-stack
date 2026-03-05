@@ -38,9 +38,6 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  verification: {
-    google: "ADD_YOUR_GSC_VERIFICATION_CODE_HERE", // Get from Google Search Console
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -86,7 +83,6 @@ const jsonLd = {
       },
       description:
         "CounselStack provides independent, expert reviews of legal practice management software to help attorneys and law firms choose the right tools.",
-      sameAs: [],
     },
     {
       "@type": "WebSite",
@@ -94,57 +90,6 @@ const jsonLd = {
       url: "https://counselstack.io",
       name: "CounselStack",
       publisher: { "@id": "https://counselstack.io/#organization" },
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://counselstack.io/search?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://counselstack.io/#faq",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is the best legal practice management software in 2026?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The best legal practice management software in 2026 depends on firm size and needs. Clio is the industry leader with the most integrations (250+) starting at $49/user/month. MyCase offers the best value for small firms starting at $39/user/month. PracticePanther is the best all-in-one at $49/user/month for solos. Smokeball is best for high-volume document-intensive practices. CosmoLex is best for firms needing built-in accounting at $109/user/month.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much does legal practice management software cost?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Legal practice management software typically costs $39–$149 per user per month, billed annually. MyCase starts at $39/user/month (Basic). Clio starts at $49/user/month (EasyStart). PracticePanther starts at $49/user/month (Solo). Smokeball starts at $149/month flat-rate. CosmoLex starts at $109/user/month. Most vendors offer a free trial of 7–30 days.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What features should legal practice management software have?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Essential features include: case/matter management, time tracking and billing, trust accounting (IOLTA compliance), client portal, document management, calendar and deadline management, and conflict checking. Advanced features include: legal AI assistance, intake forms, automated workflows, e-signature, two-way texting, and court filing integrations.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is Clio worth the price?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Clio is generally worth the price for firms that need a mature, well-integrated platform. With 250+ integrations, strong mobile apps, and the largest third-party ecosystem in legal software, Clio justifies its $49–$149/user/month price for most practices. Solo attorneys often find MyCase or PracticePanther more cost-effective.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I switch legal practice management software without losing data?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, most legal practice management platforms offer data migration assistance. You can typically export matters, contacts, documents, and billing history as CSV or via API. Vendors like PracticePanther and Clio offer free migration support on their higher-tier plans. Budget 2–4 weeks for a smooth transition.",
-          },
-        },
-      ],
     },
   ],
 };

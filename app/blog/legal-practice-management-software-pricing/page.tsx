@@ -1,13 +1,34 @@
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+
 export const metadata = {
-  title: "Legal Practice Management Software Pricing: What You'll Actually Pay in 2026 | CounselStack",
-  description: "Real pricing for Clio, MyCase, PracticePanther, Smokeball, and CosmoLex in 2026. We break down monthly costs, hidden fees, and what's actually included at each tier."
+  title: "Legal Practice Management Software Pricing: What You'll Actually Pay in 2026",
+  description: "Real pricing for Clio, MyCase, PracticePanther, Smokeball, and CosmoLex in 2026. We break down monthly costs, hidden fees, and what's actually included at each tier.",
+  alternates: { canonical: "https://counselstack.io/blog/legal-practice-management-software-pricing" },
 };
 
 export default function BlogPost() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">Legal Practice Management Software Pricing: What You'll Actually Pay in 2026</h1>
-      <p className="text-gray-600 mb-8">February 22, 2026</p>
+    <>
+      <ArticleSchema
+        title="Legal Practice Management Software Pricing: What You'll Actually Pay in 2026"
+        description="Real pricing for Clio, MyCase, PracticePanther, Smokeball, and CosmoLex in 2026. We break down monthly costs, hidden fees, and what's actually included at each tier."
+        author="CounselStack Editorial"
+        datePublished="2026-02-22"
+        url="https://counselstack.io/blog/legal-practice-management-software-pricing"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Legal PM Software Pricing", url: "https://counselstack.io/blog/legal-practice-management-software-pricing" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-bold mb-4">Legal Practice Management Software Pricing: What You'll Actually Pay in 2026</h1>
+          <p className="text-gray-600 mb-8">February 22, 2026</p>
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
@@ -480,6 +501,9 @@ export default function BlogPost() {
           </div>
         </section>
       </div>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }

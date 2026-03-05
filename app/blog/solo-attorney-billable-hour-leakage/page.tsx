@@ -1,15 +1,35 @@
 import type { Metadata } from 'next'
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: 'How Solo Attorneys Lose 20% of Their Billable Hours (And How to Stop) | CounselStack',
+  title: 'How Solo Attorneys Lose 20% of Their Billable Hours (And How to Stop)',
   description: 'Solo attorneys bill only 2.9 hours of an 8-hour day. Learn why time tracking failures cost you thousands and how practice management software fixes the leakage.',
+  alternates: { canonical: "https://counselstack.io/blog/solo-attorney-billable-hour-leakage" },
 }
 
 export default function BlogPost() {
   return (
-    <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
-      <h1>How Solo Attorneys Lose 20% of Their Billable Hours (And How to Stop)</h1>
-      <p className="text-gray-600 mb-8">February 23, 2026</p>
+    <>
+      <ArticleSchema
+        title="How Solo Attorneys Lose 20% of Their Billable Hours (And How to Stop)"
+        description="Solo attorneys bill only 2.9 hours of an 8-hour day. Learn why time tracking failures cost you thousands and how practice management software fixes the leakage."
+        author="CounselStack Editorial"
+        datePublished="2026-02-23"
+        url="https://counselstack.io/blog/solo-attorney-billable-hour-leakage"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Solo Attorney Billable Hour Leakage", url: "https://counselstack.io/blog/solo-attorney-billable-hour-leakage" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
+          <h1>How Solo Attorneys Lose 20% of Their Billable Hours (And How to Stop)</h1>
+          <p className="text-gray-600 mb-8">February 23, 2026</p>
 
       <p className="text-xl text-gray-700 mb-8">
         Solo attorneys bill an average of 2.9 hours per 8-hour workday. That's a 36% utilization rate. At $250/hour, you're leaving $1,275 per day on the table—over $300,000 per year in work you do but never bill for. The Clio 2024 Legal Trends Report confirmed what most solo practitioners already feel: the billing leakage is real, and it's expensive.
@@ -308,6 +328,9 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   )
 }

@@ -6,13 +6,12 @@ import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { ItemListSchema } from "@/components/schema/ItemListSchema";
 
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Practice Management Software 2026 | CounselStack",
+  title: "Best Legal Practice Management Software 2026",
   description:
     "The best legal practice management software in 2026, ranked by experts. Clio, MyCase, PracticePanther, Smokeball, and CosmoLex — with real pricing and honest verdicts.",
   alternates: {
@@ -20,28 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best legal practice management software in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The best legal practice management software in 2026 is Clio for firms needing deep integrations (250+ apps, from $49/user/month), MyCase for the best value (from $39/user/month), PracticePanther for solo practitioners (from $49/user/month with native eSignature), Smokeball for document-intensive practices, and CosmoLex for firms wanting built-in accounting.",
-      },
-    },
-    {
-      "@type": "Question",
-      "name": "Which legal software is best for small law firms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MyCase Pro ($89/user/month) is the best legal practice management software for most small law firms in 2026. It offers the cleanest interface, built-in AI features, two-way texting, and unlimited storage at a competitive price.",
-      },
-    },
-  ],
-};
 
 const picks = [
   {
@@ -128,12 +105,6 @@ export default function BestLegalPMPage() {
 
   return (
     <>
-      <FAQSchema
-        faqs={jsonLd.mainEntity.map((faq) => ({
-          question: faq.name,
-          answer: faq.acceptedAnswer.text,
-        }))}
-      />
       <ItemListSchema
         name="Best Legal Practice Management Software 2026"
         url={`${baseUrl}/best/legal-practice-management-software-2026`}

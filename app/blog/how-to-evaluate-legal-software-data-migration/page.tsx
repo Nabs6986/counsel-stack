@@ -1,15 +1,35 @@
 import type { Metadata } from 'next'
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: 'How to Evaluate Legal Software Data Migration Before Switching | CounselStack',
+  title: 'How to Evaluate Legal Software Data Migration Before Switching',
   description: 'Data migration is the #1 reason law firms stay in bad software. Learn what to ask vendors, red flags to watch for, and how to protect your firm during a switch.',
+  alternates: { canonical: "https://counselstack.io/blog/how-to-evaluate-legal-software-data-migration" },
 }
 
 export default function BlogPost() {
   return (
-    <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
-      <h1>How to Evaluate Legal Software Data Migration Before Switching</h1>
-      <p className="text-gray-600 mb-8">February 24, 2026</p>
+    <>
+      <ArticleSchema
+        title="How to Evaluate Legal Software Data Migration Before Switching"
+        description="Data migration is the #1 reason law firms stay in bad software. Learn what to ask vendors, red flags to watch for, and how to protect your firm during a switch."
+        author="CounselStack Editorial"
+        datePublished="2026-02-24"
+        url="https://counselstack.io/blog/how-to-evaluate-legal-software-data-migration"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Evaluate Legal Software Data Migration", url: "https://counselstack.io/blog/how-to-evaluate-legal-software-data-migration" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
+          <h1>How to Evaluate Legal Software Data Migration Before Switching</h1>
+          <p className="text-gray-600 mb-8">February 24, 2026</p>
 
       <p className="text-xl text-gray-700 mb-8">
         Data migration fear keeps more law firms trapped in bad software than any other factor. The stories are everywhere on Reddit and bar association listservs: migrations that took 6 weeks instead of 48 hours, trust account balances that came over wrong, five years of billing history lost somewhere between export and import. But here's what nobody tells you: most migration disasters are preventable. The firms that get burned skip the evaluation phase or trust vendor promises without verification.
@@ -377,6 +397,9 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   )
 }

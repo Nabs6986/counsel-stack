@@ -13,7 +13,7 @@ const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
   title:
-    "Best Legal Practice Management Software 2026 — Expert Guide | CounselStack",
+    "Best Legal Practice Management Software 2026 — Expert Guide",
   description:
     "The 5 best legal practice management software platforms in 2026, ranked by experts. Clio, MyCase, PracticePanther, Smokeball, CosmoLex — with verified pricing, pros/cons, and honest verdicts.",
   alternates: {

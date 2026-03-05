@@ -1,15 +1,35 @@
 import type { Metadata } from 'next'
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
 
 export const metadata: Metadata = {
-  title: 'All-in-One vs Best-of-Breed Legal Software: Which Stack is Right for Your Firm? | CounselStack',
+  title: 'All-in-One vs Best-of-Breed Legal Software: Which Stack is Right for Your Firm?',
   description: 'Should your law firm use one integrated platform or connect specialized tools? We analyze costs, complexity, and real-world tradeoffs for solo and small firms.',
+  alternates: { canonical: "https://counselstack.io/blog/all-in-one-vs-best-of-breed-legal-software" },
 }
 
 export default function BlogPost() {
   return (
-    <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
-      <h1>All-in-One vs Best-of-Breed Legal Software: Which Stack is Right for Your Firm?</h1>
-      <p className="text-gray-600 mb-8">February 23, 2026</p>
+    <>
+      <ArticleSchema
+        title="All-in-One vs Best-of-Breed Legal Software: Which Stack is Right for Your Firm?"
+        description="Should your law firm use one integrated platform or connect specialized tools? We analyze costs, complexity, and real-world tradeoffs for solo and small firms."
+        author="CounselStack Editorial"
+        datePublished="2026-02-23"
+        url="https://counselstack.io/blog/all-in-one-vs-best-of-breed-legal-software"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "All-in-One vs Best-of-Breed Legal Software", url: "https://counselstack.io/blog/all-in-one-vs-best-of-breed-legal-software" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="prose prose-lg max-w-4xl mx-auto px-4 py-12">
+          <h1>All-in-One vs Best-of-Breed Legal Software: Which Stack is Right for Your Firm?</h1>
+          <p className="text-gray-600 mb-8">February 23, 2026</p>
 
       <p className="text-xl text-gray-700 mb-8">
         All-in-one practice management platforms work better for most solo and small firms. The cognitive tax of juggling multiple disconnected tools—Toggl for time, Calendly for scheduling, Google Drive for docs, LawPay for payments, QuickBooks for accounting—costs you more in mental overhead and data sync errors than you save by picking "the best" tool in each category. For firms under 10 attorneys, consolidation wins.
@@ -314,6 +334,9 @@ export default function BlogPost() {
           </div>
         </div>
       </section>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   )
 }

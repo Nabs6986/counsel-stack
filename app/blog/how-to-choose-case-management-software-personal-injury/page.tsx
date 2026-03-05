@@ -1,13 +1,34 @@
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+
 export const metadata = {
-  title: "How to Choose Case Management Software for Personal Injury Law Firms | CounselStack",
-  description: "A practical guide to selecting case management software for PI firms. Compare features, integrations, and pricing to find the right platform for your caseload."
+  title: "How to Choose Case Management Software for Personal Injury Law Firms",
+  description: "A practical guide to selecting case management software for PI firms. Compare features, integrations, and pricing to find the right platform for your caseload.",
+  alternates: { canonical: "https://counselstack.io/blog/how-to-choose-case-management-software-personal-injury" },
 };
 
 export default function BlogPost() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">How to Choose Case Management Software for Personal Injury Law Firms</h1>
-      <p className="text-gray-600 mb-8">March 3, 2026</p>
+    <>
+      <ArticleSchema
+        title="How to Choose Case Management Software for Personal Injury Law Firms"
+        description="A practical guide to selecting case management software for PI firms. Compare features, integrations, and pricing to find the right platform for your caseload."
+        author="CounselStack Editorial"
+        datePublished="2026-03-03"
+        url="https://counselstack.io/blog/how-to-choose-case-management-software-personal-injury"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Case Management Software for PI Firms", url: "https://counselstack.io/blog/how-to-choose-case-management-software-personal-injury" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-bold mb-4">How to Choose Case Management Software for Personal Injury Law Firms</h1>
+          <p className="text-gray-600 mb-8">March 3, 2026</p>
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
@@ -478,6 +499,9 @@ export default function BlogPost() {
           </div>
         </section>
       </div>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }

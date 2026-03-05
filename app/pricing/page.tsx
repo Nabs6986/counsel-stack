@@ -5,12 +5,11 @@ import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Legal Practice Management Software Pricing Comparison 2026 | CounselStack",
+  title: "Legal Practice Management Software Pricing Comparison 2026",
   description:
     "Compare pricing for Clio, MyCase, PracticePanther, Smokeball, and CosmoLex. Real 2026 pricing including hidden fees, add-ons, and annual vs monthly rates.",
   alternates: {
@@ -18,28 +17,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is the cheapest legal practice management software?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "MyCase Basic is the cheapest major legal practice management platform at $39/user/month billed annually ($49/month billed monthly). It includes full case management, billing, client portal, and unlimited document storage.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much does Clio cost per month?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Clio's pricing is per user per month: EasyStart $49 (annual) / $59 (monthly), Essentials $89/$99, Advanced $119/$139, Expand $149/$169. All plans include a 7-day free trial.",
-      },
-    },
-  ],
-};
 
 const platforms = [
   {
@@ -161,12 +138,6 @@ export default function PricingPage() {
 
   return (
     <>
-      <FAQSchema
-        faqs={jsonLd.mainEntity.map((faq) => ({
-          question: faq.name,
-          answer: faq.acceptedAnswer.text,
-        }))}
-      />
       <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 

@@ -7,7 +7,6 @@ import { Footer } from "@/components/marketing/Footer";
 import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
 import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { getPost, getAllPostSlugs, getAllPosts } from "../_data/posts";
 import { formatDate } from "@/lib/utils";
 
@@ -73,14 +72,6 @@ export default async function BlogPostPage({ params }: Props) {
         dateModified={post.updatedAt}
         url={pageUrl}
       />
-      {post.faqs && post.faqs.length > 0 && (
-        <FAQSchema
-          faqs={post.faqs.map((faq) => ({
-            question: faq.question,
-            answer: faq.answer,
-          }))}
-        />
-      )}
       <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />
 

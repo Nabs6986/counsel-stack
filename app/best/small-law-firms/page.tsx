@@ -11,7 +11,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Practice Management Software for Small Law Firms 2026 | CounselStack",
+  title: "Best Legal Practice Management Software for Small Law Firms 2026",
   description:
     "Best legal PM software for small law firms (2–25 attorneys) in 2026. Compare Clio, MyCase, and PracticePanther for small firm needs.",
   alternates: {

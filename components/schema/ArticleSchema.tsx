@@ -7,6 +7,7 @@ interface ArticleSchemaProps {
   datePublished: string;
   dateModified?: string;
   url: string;
+  image?: string;
 }
 
 export function ArticleSchema({
@@ -16,15 +17,36 @@ export function ArticleSchema({
   datePublished,
   dateModified,
   url,
+  image = "https://counselstack.io/og-image.png",
 }: ArticleSchemaProps) {
+  const isOrgAuthor =
+    author.includes("CounselStack") || author.includes("Editorial");
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
-    author: {
-      "@type": "Person",
-      name: author,
+    image,
+    author: isOrgAuthor
+      ? {
+          "@type": "Organization",
+          name: author,
+          url: "https://counselstack.io",
+        }
+      : {
+          "@type": "Person",
+          name: author,
+          url: `https://counselstack.io/about`,
+        },
+    publisher: {
+      "@type": "Organization",
+      name: "CounselStack",
+      url: "https://counselstack.io",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://counselstack.io/logo.png",
+      },
     },
     datePublished,
     dateModified: dateModified || datePublished,

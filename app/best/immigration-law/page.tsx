@@ -12,7 +12,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Software for Immigration Law 2026 | CounselStack",
+  title: "Best Legal Software for Immigration Law 2026",
   description:
     "Best legal practice management software for immigration lawyers in 2026. Compare Clio, Docketwise, and INSZoom for case tracking, forms, and USCIS integration.",
   alternates: {

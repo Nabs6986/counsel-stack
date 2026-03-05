@@ -1,13 +1,34 @@
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+
 export const metadata = {
-  title: "Best Legal Document Automation Tools for Small Law Firms in 2026 | CounselStack",
-  description: "Compare document automation platforms for small law firms. Features, pricing, and integration options for HotDocs, Contract Express, Clio Draft, and more."
+  title: "Best Legal Document Automation Tools for Small Law Firms in 2026",
+  description: "Compare document automation platforms for small law firms. Features, pricing, and integration options for HotDocs, Contract Express, Clio Draft, and more.",
+  alternates: { canonical: "https://counselstack.io/blog/best-legal-document-automation-tools-small-firms-2026" },
 };
 
 export default function BlogPost() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">Best Legal Document Automation Tools for Small Law Firms in 2026</h1>
-      <p className="text-gray-600 mb-8">March 3, 2026</p>
+    <>
+      <ArticleSchema
+        title="Best Legal Document Automation Tools for Small Law Firms in 2026"
+        description="Compare document automation platforms for small law firms. Features, pricing, and integration options for HotDocs, Contract Express, Clio Draft, and more."
+        author="CounselStack Editorial"
+        datePublished="2026-03-03"
+        url="https://counselstack.io/blog/best-legal-document-automation-tools-small-firms-2026"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Best Legal Document Automation Tools", url: "https://counselstack.io/blog/best-legal-document-automation-tools-small-firms-2026" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-bold mb-4">Best Legal Document Automation Tools for Small Law Firms in 2026</h1>
+          <p className="text-gray-600 mb-8">March 3, 2026</p>
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
@@ -597,6 +618,9 @@ export default function BlogPost() {
           </div>
         </section>
       </div>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }

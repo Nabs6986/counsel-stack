@@ -171,7 +171,7 @@ export const comparisons: Record<string, Comparison> = {
           "No — Clio offers 250+ integrations versus MyCase's approximately 50. Both integrate with QuickBooks, Google, Outlook, and Dropbox, which covers most firms' needs. If you rely on specialized tools (specific document management systems, niche legal databases, or industry-specific software), Clio's larger integration library is an advantage.",
       },
     ],
-    metaTitle: "Clio vs MyCase 2026: Side-by-Side Comparison | CounselStack",
+    metaTitle: "Clio vs MyCase 2026: Side-by-Side Comparison",
     metaDescription:
       "Clio vs MyCase: detailed comparison of pricing, features, ease of use, and integrations. Which legal practice management software is right for your firm?",
     intro:
@@ -302,7 +302,7 @@ export const comparisons: Record<string, Comparison> = {
           "PracticePanther is the better choice for insurance defense attorneys, primarily because it includes LEDES billing and UTBMS coding on the Business plan. These are essential for submitting invoices to insurance carriers' billing systems. Clio does not natively support LEDES billing.",
       },
     ],
-    metaTitle: "Clio vs PracticePanther 2026: Full Comparison | CounselStack",
+    metaTitle: "Clio vs PracticePanther 2026: Full Comparison",
     metaDescription:
       "Clio vs PracticePanther: compare pricing, features, eSignature, integrations, and more. Which is better for your law firm in 2026?",
     intro:
@@ -432,7 +432,7 @@ export const comparisons: Record<string, Comparison> = {
           "Yes. PracticePanther's Business plan includes free data migration from other platforms including MyCase. MyCase also provides migration support. Expect a 1–2 week process to migrate matters, contacts, documents, and billing history. Both platforms support CSV data export.",
       },
     ],
-    metaTitle: "MyCase vs PracticePanther 2026: Which Is Better? | CounselStack",
+    metaTitle: "MyCase vs PracticePanther 2026: Which Is Better?",
     metaDescription:
       "MyCase vs PracticePanther: compare pricing (starting at $39 vs $49), features, workflow automation, and ease of use for law firms.",
     intro:
@@ -578,7 +578,7 @@ export const comparisons: Record<string, Comparison> = {
           "Smokeball's automatic time tracking feature requires the Windows desktop application. Mac users can access the web-based platform for case management, billing, and documents, but won't get the signature automatic time capture. If your firm is Mac-based, Clio's fully browser-based platform may be a better fit.",
       },
     ],
-    metaTitle: "Clio vs Smokeball 2026: Full Feature Comparison | CounselStack",
+    metaTitle: "Clio vs Smokeball 2026: Full Feature Comparison",
     metaDescription:
       "Clio vs Smokeball: compare automatic time tracking, pricing, integrations, and document automation. Which legal practice management software fits your firm?",
     intro:
@@ -712,7 +712,7 @@ export const comparisons: Record<string, Comparison> = {
           "Smokeball's signature automatic time tracking requires the Windows desktop app. The web platform works on Mac for case management, billing, and documents, but you lose the background time capture. MyCase is fully browser-based and works identically on Mac and Windows.",
       },
     ],
-    metaTitle: "MyCase vs Smokeball 2026: Which Is Right for You? | CounselStack",
+    metaTitle: "MyCase vs Smokeball 2026: Which Is Right for You?",
     metaDescription:
       "MyCase vs Smokeball: compare pricing, automatic time tracking, AI features, and ease of use. Find the best legal practice management for your firm.",
     intro:
@@ -847,7 +847,7 @@ export const comparisons: Record<string, Comparison> = {
       },
     ],
     metaTitle:
-      "PracticePanther vs Smokeball 2026: Side-by-Side Comparison | CounselStack",
+      "PracticePanther vs Smokeball 2026: Side-by-Side Comparison",
     metaDescription:
       "PracticePanther vs Smokeball: compare automatic time tracking, LEDES billing, eSignature, pricing, and features. Which is better for your law firm?",
     intro:
@@ -993,7 +993,7 @@ export const comparisons: Record<string, Comparison> = {
           "Yes, and many PI firms prefer it. Filevine's case phase tracking, custom pipelines, deadline dependency chains, and DemandsAI feature are purpose-built for personal injury workflows. The demand letter automation alone can save hours per case. If your firm handles 50+ active PI cases, Filevine's structure provides meaningful efficiency gains over Clio's more general-purpose approach.",
       },
     ],
-    metaTitle: "Clio vs Filevine 2026: Which Is Better for Your Firm? | CounselStack",
+    metaTitle: "Clio vs Filevine 2026: Which Is Better for Your Firm?",
     metaDescription:
       "Clio vs Filevine: compare pricing, litigation features, integrations, and ease of use. Which legal software is better for your practice in 2026?",
     intro:
@@ -1128,7 +1128,7 @@ export const comparisons: Record<string, Comparison> = {
       },
     ],
     metaTitle:
-      "PracticePanther vs CosmoLex 2026: Full Comparison | CounselStack",
+      "PracticePanther vs CosmoLex 2026: Full Comparison",
     metaDescription:
       "PracticePanther vs CosmoLex: compare pricing, built-in accounting, eSignature, LEDES billing, and trust accounting. Which legal software should you choose?",
     intro:
@@ -1262,7 +1262,7 @@ export const comparisons: Record<string, Comparison> = {
           "Yes. CosmoLex provides migration assistance to import matters, contacts, time entries, and billing history from MyCase. The additional complexity is migrating your accounting data if you're also switching away from QuickBooks simultaneously. Plan for a 2–4 week transition with careful financial reconciliation.",
       },
     ],
-    metaTitle: "MyCase vs CosmoLex 2026: Which Should You Choose? | CounselStack",
+    metaTitle: "MyCase vs CosmoLex 2026: Which Should You Choose?",
     metaDescription:
       "MyCase vs CosmoLex: compare pricing ($39 vs $109), ease of use, built-in accounting, AI features, and more. Find the right legal software for your firm.",
     intro:
@@ -1396,7 +1396,7 @@ export const comparisons: Record<string, Comparison> = {
           "CosmoLex is fully browser-based and works identically on Mac and Windows. Smokeball's automatic time tracking requires the Windows desktop app — Mac users access the web platform but lose the background time capture. For Mac-based firms, CosmoLex is more fully functional.",
       },
     ],
-    metaTitle: "Smokeball vs CosmoLex 2026: Detailed Comparison | CounselStack",
+    metaTitle: "Smokeball vs CosmoLex 2026: Detailed Comparison",
     metaDescription:
       "Smokeball vs CosmoLex: compare automatic time tracking vs built-in accounting, pricing, document automation, and trust compliance for law firms.",
     intro:
@@ -1531,7 +1531,7 @@ export const comparisons: Record<string, Comparison> = {
       },
     ],
     metaTitle:
-      "Clio vs Lawmatics 2026: Practice Management vs Legal CRM | CounselStack",
+      "Clio vs Lawmatics 2026: Practice Management vs Legal CRM",
     metaDescription:
       "Clio vs Lawmatics: compare practice management vs legal CRM. Understand pricing, features, intake automation, and when to use both together.",
     intro:
@@ -1706,7 +1706,7 @@ export const comparisons: Record<string, Comparison> = {
           "CosmoLex is designed to replace QuickBooks, not integrate with it. The platform includes complete double-entry accounting, eliminating the need for the QuickBooks integration. If your firm has existing staff who specifically need to work in QuickBooks, CosmoLex may create workflow disruption. However, most firms that switch report the transition is worth the elimination of dual-system management.",
       },
     ],
-    metaTitle: "Clio vs CosmoLex 2026: Side-by-Side Comparison | CounselStack",
+    metaTitle: "Clio vs CosmoLex 2026: Side-by-Side Comparison",
     metaDescription:
       "Clio vs CosmoLex: the definitive 2026 comparison. Pricing, accounting features, integrations, trust accounting, and who should choose each platform.",
     intro:

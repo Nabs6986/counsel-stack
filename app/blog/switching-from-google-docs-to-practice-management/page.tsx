@@ -1,13 +1,34 @@
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+
 export const metadata = {
-  title: "Why Solo Attorneys Are Switching From Google Docs to Practice Management Software | CounselStack",
-  description: "Running your law practice on Google Docs and spreadsheets? Here's why solo attorneys are making the switch to practice management software—and when it actually makes sense."
+  title: "Why Solo Attorneys Are Switching From Google Docs to Practice Management Software",
+  description: "Running your law practice on Google Docs and spreadsheets? Here's why solo attorneys are making the switch to practice management software—and when it actually makes sense.",
+  alternates: { canonical: "https://counselstack.io/blog/switching-from-google-docs-to-practice-management" },
 };
 
 export default function BlogPost() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">Why Solo Attorneys Are Switching From Google Docs to Practice Management Software</h1>
-      <p className="text-gray-600 mb-8">February 21, 2026</p>
+    <>
+      <ArticleSchema
+        title="Why Solo Attorneys Are Switching From Google Docs to Practice Management Software"
+        description="Running your law practice on Google Docs and spreadsheets? Here's why solo attorneys are making the switch to practice management software—and when it actually makes sense."
+        author="CounselStack Editorial"
+        datePublished="2026-02-21"
+        url="https://counselstack.io/blog/switching-from-google-docs-to-practice-management"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Switching From Google Docs to PM", url: "https://counselstack.io/blog/switching-from-google-docs-to-practice-management" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-bold mb-4">Why Solo Attorneys Are Switching From Google Docs to Practice Management Software</h1>
+          <p className="text-gray-600 mb-8">February 21, 2026</p>
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
@@ -320,6 +341,9 @@ export default function BlogPost() {
           </div>
         </section>
       </div>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -6,7 +6,7 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure | CounselStack",
+  title: "Affiliate Disclosure",
   description:
     "Read CounselStack's affiliate disclosure and editorial independence policy.",
   alternates: {

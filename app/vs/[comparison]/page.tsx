@@ -8,7 +8,6 @@ import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { ComparisonSchema } from "@/components/schema/ComparisonSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { getComparison, getAllComparisonSlugs } from "../_data/comparisons";
 
 interface Props {
@@ -63,12 +62,6 @@ export default async function ComparisonPage({ params }: Props) {
           { name: comp.tool2Name, description: comp.summaryReason },
         ]}
         url={pageUrl}
-      />
-      <FAQSchema
-        faqs={comp.faqs.map((faq) => ({
-          question: faq.question,
-          answer: faq.answer,
-        }))}
       />
       <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />

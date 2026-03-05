@@ -137,31 +137,12 @@ const faqCategories = [
   },
 ];
 
-const allQuestions = faqCategories.flatMap((cat) => cat.questions);
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: allQuestions.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.a,
-    },
-  })),
-};
 
 export default function FAQPage() {
   return (
     <>
       <Navbar />
       <main className="min-h-screen">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-
         {/* Hero */}
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-12">
           <div className="mx-auto max-w-3xl px-6">

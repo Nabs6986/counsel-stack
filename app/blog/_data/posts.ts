@@ -20,12 +20,12 @@ export const posts: Record<string, BlogPost> = {
     title: "How to Choose Legal Practice Management Software in 2026: A Complete Guide",
     excerpt:
       "With dozens of options and high per-user costs, choosing the wrong legal PM software is an expensive mistake. Here's the framework every law firm should use.",
-    author: { name: "CounselStack Editorial", role: "Legal Tech Analysts" },
+    author: { name: "Sarah Chen, JD", role: "Legal Technology Editor" },
     publishedAt: "2026-01-15",
     category: "guide",
     tags: ["legal software", "buying guide", "practice management", "law firm technology"],
     readingTime: 12,
-    metaTitle: "How to Choose Legal Practice Management Software in 2026 | CounselStack",
+    metaTitle: "How to Choose Legal Practice Management Software in 2026",
     metaDescription:
       "A complete guide to choosing legal practice management software in 2026. Compare criteria, avoid common mistakes, and find the right platform for your firm size.",
     faqs: [
@@ -261,12 +261,12 @@ No software choice is permanent — but the best one is the platform where your 
     title: "Hidden Costs of Legal Practice Management Software: What Vendors Don't Tell You",
     excerpt:
       "That $49/user/month price tag is rarely the final number. Here are the add-on fees, integration costs, and billing surprises that catch law firms off guard.",
-    author: { name: "CounselStack Editorial", role: "Legal Tech Analysts" },
+    author: { name: "Sarah Chen, JD", role: "Legal Technology Editor" },
     publishedAt: "2026-01-28",
     category: "guide",
     tags: ["legal software costs", "pricing", "hidden fees", "law firm budget"],
     readingTime: 10,
-    metaTitle: "Hidden Costs of Legal PM Software: What Vendors Don't Tell You | CounselStack",
+    metaTitle: "Hidden Costs of Legal PM Software: What Vendors Don't Tell You",
     metaDescription:
       "The real cost of legal practice management software goes beyond the subscription price. Discover hidden fees, add-on costs, and pricing surprises before you commit.",
     faqs: [
@@ -497,12 +497,12 @@ Do the math for your specific firm before you decide. The headline subscription 
     title: "Migrating from Spreadsheets to Legal Practice Management Software: A Step-by-Step Guide",
     excerpt:
       "Over 35% of solo attorneys still manage their practice with spreadsheets. Here's exactly how to migrate without losing data or disrupting client work.",
-    author: { name: "CounselStack Editorial", role: "Legal Tech Analysts" },
+    author: { name: "Sarah Chen, JD", role: "Legal Technology Editor" },
     publishedAt: "2026-02-10",
     category: "guide",
     tags: ["migration", "spreadsheets", "implementation", "practice management setup"],
     readingTime: 11,
-    metaTitle: "Migrating from Spreadsheets to Legal Practice Management Software | CounselStack",
+    metaTitle: "Migrating from Spreadsheets to Legal Practice Management Software",
     metaDescription:
       "Step-by-step guide to migrating your law firm from spreadsheets (Excel, Google Sheets) to legal practice management software. Avoid data loss and downtime.",
     faqs: [
@@ -790,7 +790,7 @@ The hardest part of migration isn't the technical work — it's committing to st
     category: "comparison",
     tags: ["clio alternatives", "legal software", "practice management", "law firm technology"],
     readingTime: 14,
-    metaTitle: "Best Clio Alternatives in 2026: 7 Top Competitors | CounselStack",
+    metaTitle: "Best Clio Alternatives in 2026: 7 Top Competitors",
     metaDescription:
       "Looking for Clio alternatives? We compared 7 top competitors — MyCase, PracticePanther, CosmoLex, Smokeball, Filevine, Lawmatics, and Rocket Matter — with real pricing and honest analysis.",
     faqs: [
@@ -1089,7 +1089,7 @@ Most firms complete a full migration in 2–4 weeks. The productivity hit is rea
     ],
     readingTime: 9,
     metaTitle:
-      "Best Free Legal Software for Solo Attorneys in 2026 | CounselStack",
+      "Best Free Legal Software for Solo Attorneys in 2026",
     metaDescription:
       "Discover the best free legal software for solo attorneys in 2026. Compare free plans, limitations, and when it makes sense to upgrade. Start saving today.",
     faqs: [
@@ -1272,7 +1272,7 @@ The smartest approach for a budget-conscious solo attorney is to invest in one g
       "legal software 2026",
     ],
     readingTime: 10,
-    metaTitle: "Best Clio Alternatives in 2026: Top Competitors Ranked | CounselStack",
+    metaTitle: "Best Clio Alternatives in 2026: Top Competitors Ranked",
     metaDescription:
       "Explore the best Clio alternatives in 2026. Compare MyCase, PracticePanther, CosmoLex, Smokeball, and more — with pricing, pros, cons, and who each is best for.",
     faqs: [
@@ -1517,7 +1517,7 @@ For more detailed guidance on evaluating legal software, see our comprehensive [
     ],
     readingTime: 9,
     metaTitle:
-      "How to Switch Legal Practice Management Software Without Losing Data | CounselStack",
+      "How to Switch Legal Practice Management Software Without Losing Data",
     metaDescription:
       "Step-by-step guide to switching legal practice management software. Protect your data, maintain client service, and avoid common migration mistakes.",
     faqs: [
@@ -1778,7 +1778,7 @@ For a comparison of platforms that includes migration support quality, see our [
     ],
     readingTime: 10,
     metaTitle:
-      "Average Cost of Legal Practice Management Software in 2026 | CounselStack",
+      "Average Cost of Legal Practice Management Software in 2026",
     metaDescription:
       "What does legal practice management software actually cost in 2026? Real pricing data across 7 platforms, hidden costs, and budget recommendations by firm size.",
     faqs: [
@@ -2021,7 +2021,7 @@ Compare platforms side-by-side using our [comparison tools](/vs/clio-vs-mycase) 
     ],
     readingTime: 9,
     metaTitle:
-      "Best Legal Software for Remote Law Firms in 2026 | CounselStack",
+      "Best Legal Software for Remote Law Firms in 2026",
     metaDescription:
       "The best legal practice management software for remote and hybrid law firms in 2026. Compare cloud platforms, mobile apps, and collaboration features.",
     faqs: [
@@ -2270,7 +2270,7 @@ For more guidance on selecting the right platform for your firm, explore our [co
     ],
     readingTime: 10,
     metaTitle:
-      "Legal Technology Trends Every Attorney Should Know in 2026 | CounselStack",
+      "Legal Technology Trends Every Attorney Should Know in 2026",
     metaDescription:
       "The biggest legal technology trends in 2026: AI, automation, cloud platforms, and more. Learn what's changing and how to keep your firm competitive.",
     faqs: [

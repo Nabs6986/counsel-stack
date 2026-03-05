@@ -5,12 +5,12 @@ import { CheckCircle, Users, Zap, DollarSign } from "lucide-react";
 import { WaitlistForm } from "./WaitlistForm";
 
 export const metadata: Metadata = {
-  title: "Early Access Waitlist | CounselStack",
+  title: "Early Access Waitlist",
   description:
     "Join the waitlist for simpler, more affordable legal practice management software. Built for solo attorneys and small firms.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Get Early Access | CounselStack",
+    title: "Get Early Access",
     description:
       "We're building lightweight legal software for solo attorneys and small firms. No bloat, fair pricing.",
   },

@@ -7,6 +7,8 @@ interface ReviewSchemaProps {
   softwareName: string;
   softwareUrl: string;
   price: string;
+  datePublished?: string;
+  dateModified?: string;
 }
 
 export function ReviewSchema({
@@ -16,6 +18,8 @@ export function ReviewSchema({
   softwareName,
   softwareUrl,
   price,
+  datePublished = "2026-02-01",
+  dateModified = "2026-02-17",
 }: ReviewSchemaProps) {
   const numericPrice = price.replace(/[^0-9.]/g, "") || "0";
 
@@ -24,13 +28,14 @@ export function ReviewSchema({
     "@type": "Review",
     name,
     reviewBody,
-    datePublished: "2026-02-01",
-    dateModified: "2026-02-17",
+    datePublished,
+    dateModified,
     author: {
       "@type": "Organization",
       name: "CounselStack",
       url: "https://counselstack.io",
     },
+    publisher: { "@id": "https://counselstack.io/#organization" },
     reviewRating: {
       "@type": "Rating",
       ratingValue,
@@ -47,13 +52,6 @@ export function ReviewSchema({
         "@type": "Offer",
         price: numericPrice,
         priceCurrency: "USD",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue,
-        reviewCount: 1,
-        bestRating: 5,
-        worstRating: 1,
       },
     },
   };

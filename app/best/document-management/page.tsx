@@ -12,7 +12,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Document Management Software 2026 | CounselStack",
+  title: "Best Legal Document Management Software 2026",
   description:
     "Best legal document management software in 2026. Compare Smokeball, Clio, and NetDocuments for document automation, version control, and secure storage for law firms.",
   alternates: {

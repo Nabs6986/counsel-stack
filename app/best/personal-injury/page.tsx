@@ -12,7 +12,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Software for Personal Injury Firms 2026 | CounselStack",
+  title: "Best Legal Software for Personal Injury Firms 2026",
   description:
     "Best legal practice management software for personal injury law firms in 2026. Compare Clio, Smokeball, and MyCase for PI case management, demand letters, and settlement tracking.",
   alternates: {

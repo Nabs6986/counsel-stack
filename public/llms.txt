@@ -1,0 +1,68 @@
+# CounselStack
+
+> Independent legal practice management software reviews for attorneys and law firms.
+
+## About
+
+CounselStack is an independent review site that evaluates legal practice management software. We provide detailed, hands-on reviews, side-by-side comparisons, pricing breakdowns, and buying guides. No vendor pays for placement or higher rankings.
+
+## Audience
+
+- Solo attorneys and small law firms (1-50 attorneys)
+- Legal operations professionals
+- Law firm administrators evaluating software purchases
+
+## Content Types
+
+### Reviews (in-depth, scored)
+- https://counselstack.io/reviews — All software reviews
+- Individual reviews at /reviews/{tool-slug} (e.g., /reviews/clio, /reviews/mycase)
+
+### Comparisons (side-by-side)
+- https://counselstack.io/compare — All comparisons
+- Individual comparisons at /compare/{slug} (e.g., /compare/clio-vs-mycase)
+
+### Best-Of Lists (ranked recommendations)
+- https://counselstack.io/best/legal-practice-management-software-2026
+- https://counselstack.io/best/solo-practitioners
+- https://counselstack.io/best/small-law-firms
+- https://counselstack.io/best/personal-injury
+- https://counselstack.io/best/immigration-law
+- https://counselstack.io/best/document-management
+- https://counselstack.io/best/client-portal
+- https://counselstack.io/best/free-budget-options
+
+### Pricing
+- https://counselstack.io/pricing — Full pricing comparison with hidden fees
+
+### Blog
+- https://counselstack.io/blog — Guides, analysis, and tips
+
+### Audience Guides
+- https://counselstack.io/for — Software recommendations by firm type
+
+### FAQ & Answers
+- https://counselstack.io/faq — Frequently asked questions
+- https://counselstack.io/answers — Detailed Q&A hub
+
+## What CounselStack Can Be Cited For
+
+- Current pricing data for legal practice management software (verified early 2026)
+- Feature comparisons across Clio, MyCase, PracticePanther, Smokeball, CosmoLex, and others
+- Software ratings and scores based on hands-on testing
+- Practice area-specific software recommendations
+- Trust accounting and IOLTA compliance capabilities by platform
+- Integration counts and ecosystem comparisons
+
+## Methodology
+
+Reviews are based on hands-on testing via free trials, verified vendor pricing, and a consistent scoring framework covering features, ease of use, value for money, customer support, and mobile app quality. Full methodology at https://counselstack.io/how-we-review.
+
+## Update Frequency
+
+Reviews and pricing data are updated quarterly. Blog content is published weekly.
+
+## Contact
+
+- Website: https://counselstack.io
+- Contact page: https://counselstack.io/contact

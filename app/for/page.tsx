@@ -10,7 +10,7 @@ import { audiences, getAllAudienceSlugs } from "./_data/audiences";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Software by Practice Type & Firm Size (2026) | CounselStack",
+  title: "Best Legal Software by Practice Type & Firm Size (2026)",
   description:
     "Find the best legal practice management software for your specific needs. Browse recommendations by practice type (family law, personal injury, immigration, criminal defense) and firm size (solo, small, mid-size).",
   alternates: {

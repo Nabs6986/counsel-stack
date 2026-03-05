@@ -8,7 +8,6 @@ import { Breadcrumbs } from "@/components/marketing/Breadcrumbs";
 import { AffiliateDisclosure } from "@/components/marketing/AffiliateDisclosure";
 import { StarRating } from "@/components/ui/StarRating";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 import { ReviewSchema } from "@/components/schema/ReviewSchema";
 import { getTool, getAllToolSlugs } from "../_data/tools";
 
@@ -67,14 +66,8 @@ export default async function ReviewPage({ params }: Props) {
         reviewBody={tool.verdict}
         ratingValue={tool.overallRating}
         softwareName={tool.name}
-        softwareUrl={pageUrl}
+        softwareUrl={tool.website}
         price={tool.pricing[0].price}
-      />
-      <FAQSchema
-        faqs={tool.faqs.map((faq) => ({
-          question: faq.question,
-          answer: faq.answer,
-        }))}
       />
       <BreadcrumbSchema items={breadcrumbItems} />
       <Navbar />

@@ -10,7 +10,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Free and Budget Legal Practice Management Software 2026 | CounselStack",
+  title: "Free and Budget Legal Practice Management Software 2026",
   description:
     "Best free and low-cost legal practice management software for 2026. Find affordable options for solo attorneys and small law firms.",
   alternates: {

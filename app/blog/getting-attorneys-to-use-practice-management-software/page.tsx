@@ -1,13 +1,34 @@
+import { Navbar } from "@/components/marketing/Navbar";
+import { Footer } from "@/components/marketing/Footer";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { ArticleSchema } from "@/components/schema/ArticleSchema";
+
 export const metadata = {
-  title: "How Small Law Firms Get Attorneys to Actually Use Practice Management Software | CounselStack",
-  description: "You bought the software. Your attorneys won't use it. Here's how successful firms solve the adoption problem—and the mistakes that guarantee failure."
+  title: "How Small Law Firms Get Attorneys to Actually Use Practice Management Software",
+  description: "You bought the software. Your attorneys won't use it. Here's how successful firms solve the adoption problem—and the mistakes that guarantee failure.",
+  alternates: { canonical: "https://counselstack.io/blog/getting-attorneys-to-use-practice-management-software" },
 };
 
 export default function BlogPost() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">How Small Law Firms Get Attorneys to Actually Use Practice Management Software</h1>
-      <p className="text-gray-600 mb-8">February 21, 2026</p>
+    <>
+      <ArticleSchema
+        title="How Small Law Firms Get Attorneys to Actually Use Practice Management Software"
+        description="You bought the software. Your attorneys won't use it. Here's how successful firms solve the adoption problem—and the mistakes that guarantee failure."
+        author="CounselStack Editorial"
+        datePublished="2026-02-21"
+        url="https://counselstack.io/blog/getting-attorneys-to-use-practice-management-software"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://counselstack.io" },
+        { name: "Blog", url: "https://counselstack.io/blog" },
+        { name: "Getting Attorneys to Use PM Software", url: "https://counselstack.io/blog/getting-attorneys-to-use-practice-management-software" },
+      ]} />
+      <Navbar />
+      <main className="min-h-screen">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <h1 className="text-4xl font-bold mb-4">How Small Law Firms Get Attorneys to Actually Use Practice Management Software</h1>
+          <p className="text-gray-600 mb-8">February 21, 2026</p>
       
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-gray-700 mb-8">
@@ -433,6 +454,9 @@ export default function BlogPost() {
           </div>
         </section>
       </div>
-    </article>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/marketing/Navbar";
 import { Footer } from "@/components/marketing/Footer";
-import { FAQSchema } from "@/components/schema/FAQSchema";
 
 export const metadata: Metadata = {
   title: "Legal Practice Management Software — Common Questions Answered",
@@ -118,7 +117,6 @@ export default function AnswersPage() {
   return (
     <>
       <Navbar />
-      <FAQSchema faqs={faqs} />
       <main className="min-h-screen">
         {/* Hero */}
         <section className="bg-gradient-to-b from-slate-50 to-white pt-16 pb-12">

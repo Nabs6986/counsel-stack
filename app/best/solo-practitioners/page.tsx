@@ -12,7 +12,7 @@ import { ItemListSchema } from "@/components/schema/ItemListSchema";
 const baseUrl = "https://counselstack.io";
 
 export const metadata: Metadata = {
-  title: "Best Legal Practice Management Software for Solo Attorneys 2026 | CounselStack",
+  title: "Best Legal Practice Management Software for Solo Attorneys 2026",
   description:
     "The best legal PM software for solo practitioners in 2026. Affordable options with time tracking, billing, and client portal — without enterprise complexity.",
   alternates: {
